@@ -2285,21 +2285,16 @@
         }
         const obs = new IntersectionObserver(
           (entries) => {
-            if (entries[0].isIntersecting) {
-              fire();
-              obs.disconnect();
-            }
+            if (entries[0].isIntersecting) { fire(); obs.disconnect(); }
           },
-          { threshold: 0 },
+          { threshold: 0 }
         );
         obs.observe(el);
-        // Fallback: fire if already visible after fonts/images load
-        window.addEventListener("load", () =>
-          setTimeout(() => {
-            const r = el.getBoundingClientRect();
-            if (r.top < window.innerHeight && r.bottom > 0) fire();
-          }, 200),
-        );
+        // Fire immediately if already in viewport (script runs after DOM ready)
+        setTimeout(function() {
+          var r = el.getBoundingClientRect();
+          if (r.top < window.innerHeight && r.bottom > 0) fire();
+        }, 300);
       }
 
       // Hero students
@@ -2347,4 +2342,14 @@
         const isOpen = item.classList.contains("open");
         document
           .querySelectorAll(".faq-item")
-          .forEach((el) => el.classList.r
+          .forEach((el) => el.classList.remove("open"));
+        if (!isOpen) item.classList.add("open");
+      }
+
+      function toggleNav() {
+        document.getElementById("hamburger").classList.toggle("open");
+        document.getElementById("nav-links").classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
