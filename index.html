@@ -1,1429 +1,2262 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      FBA Unchained – Build Your Amazon Private Label Brand From Scratch
+    </title>
+    <meta
+      name="description"
+      content="FBA Unchained is the complete Amazon Private Label course. Learn how to find winning products, build your own brand, source from manufacturers, and launch a profitable Amazon business — even with zero experience."
+    />
+    <meta
+      name="keywords"
+      content="amazon fba course, amazon private label, fba unchained, sell on amazon, private label course, amazon fba training, how to sell on amazon, amazon fba for beginners"
+    />
+    <meta name="author" content="FBA Unchained" />
+    <link rel="canonical" href="https://fbaunchained.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fbaunchained.com/" />
+    <meta
+      property="og:title"
+      content="FBA Unchained – Build Your Amazon Private Label Brand"
+    />
+    <meta
+      property="og:description"
+      content="The complete step-by-step system to research winning products, build your own brand, and launch a profitable Amazon private label business from scratch."
+    />
+    <meta
+      property="og:image"
+      content="https://fbaunchained.com/assets/og-image.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="FBA Unchained – Build Your Amazon Private Label Brand"
+    />
+    <meta
+      name="twitter:description"
+      content="The complete step-by-step system to launch a profitable Amazon private label business from scratch."
+    />
+    <meta
+      name="twitter:image"
+      content="https://fbaunchained.com/assets/og-image.jpg"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛓️‍💥</text></svg>"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --gold: #f5a623;
+        --gold-light: #ffd280;
+        --dark: #0a0a0a;
+        --dark2: #111111;
+        --dark3: #1a1a1a;
+        --dark4: #222222;
+        --text: #e8e2d6;
+        --muted: #888880;
+        --accent: #ff4d00;
+        --white: #faf8f4;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background: var(--dark);
+        color: var(--text);
+        font-family: "DM Sans", sans-serif;
+        font-weight: 300;
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
 
-<!-- Primary SEO -->
-<title>FBA Unchained – Build Your Amazon Private Label Brand From Scratch</title>
-<meta name="description" content="FBA Unchained is the complete Amazon Private Label course. Learn how to find winning products, build your own brand, source from manufacturers, and launch a profitable Amazon business — even with zero experience." />
-<meta name="keywords" content="amazon fba course, amazon private label, fba unchained, sell on amazon, private label course, amazon fba training, how to sell on amazon, amazon fba for beginners" />
-<meta name="author" content="FBA Unchained" />
-<link rel="canonical" href="https://fbaunchained.com/" />
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 48px;
+        background: rgba(10, 10, 10, 0.92);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(245, 166, 35, 0.15);
+      }
+      .nav-logo {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.5rem;
+        letter-spacing: 0.12em;
+        color: var(--gold);
+      }
+      .nav-links {
+        display: flex;
+        gap: 36px;
+        list-style: none;
+      }
+      .nav-links a {
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 0.82rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        transition: color 0.2s;
+      }
+      .nav-links a:hover {
+        color: var(--gold);
+      }
+      .nav-cta {
+        background: var(--gold);
+        color: var(--dark) !important;
+        padding: 9px 22px;
+        font-weight: 700 !important;
+        border-radius: 2px;
+      }
+      .nav-cta:hover {
+        background: var(--gold-light) !important;
+        color: var(--dark) !important;
+      }
 
-<!-- Open Graph (Facebook, LinkedIn previews) -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://fbaunchained.com/" />
-<meta property="og:title" content="FBA Unchained – Build Your Amazon Private Label Brand" />
-<meta property="og:description" content="The complete step-by-step system to research winning products, build your own brand, and launch a profitable Amazon private label business from scratch." />
-<meta property="og:image" content="https://fbaunchained.com/assets/og-image.jpg" />
+      #hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        padding: 140px 48px 80px;
+      }
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(
+            ellipse 60% 70% at 70% 40%,
+            rgba(245, 166, 35, 0.08) 0%,
+            transparent 70%
+          ),
+          radial-gradient(
+            ellipse 40% 50% at 20% 80%,
+            rgba(255, 77, 0, 0.05) 0%,
+            transparent 60%
+          ),
+          var(--dark);
+      }
+      .hero-grid {
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(245, 166, 35, 0.04) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(245, 166, 35, 0.04) 1px, transparent 1px);
+        background-size: 60px 60px;
+        mask-image: radial-gradient(
+          ellipse 80% 80% at 50% 50%,
+          black,
+          transparent
+        );
+      }
+      .hero-content {
+        position: relative;
+        max-width: 800px;
+        z-index: 1;
+      }
+      .hero-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-family: "DM Mono", monospace;
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 28px;
+      }
+      .hero-eyebrow::before {
+        content: "";
+        display: block;
+        width: 32px;
+        height: 1px;
+        background: var(--gold);
+      }
+      h1 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(3.5rem, 8vw, 7rem);
+        line-height: 0.95;
+        letter-spacing: 0.02em;
+        color: var(--white);
+        margin-bottom: 28px;
+      }
+      h1 span {
+        color: var(--gold);
+      }
+      .hero-sub {
+        font-size: 1.15rem;
+        color: var(--muted);
+        max-width: 520px;
+        line-height: 1.7;
+        margin-bottom: 48px;
+        font-weight: 400;
+      }
+      .hero-actions {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        flex-wrap: wrap;
+      }
+      .btn-primary {
+        display: inline-block;
+        background: var(--gold);
+        color: var(--dark);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        padding: 18px 40px;
+        border-radius: 2px;
+        transition:
+          background 0.2s,
+          transform 0.15s;
+        border: none;
+        cursor: pointer;
+      }
+      .btn-primary:hover {
+        background: var(--gold-light);
+        transform: translateY(-1px);
+      }
+      .btn-ghost {
+        display: inline-block;
+        color: var(--text);
+        text-decoration: none;
+        font-size: 0.9rem;
+        letter-spacing: 0.05em;
+        padding: 18px 0;
+        border-bottom: 1px solid rgba(232, 226, 214, 0.3);
+        transition:
+          color 0.2s,
+          border-color 0.2s;
+      }
+      .btn-ghost:hover {
+        color: var(--gold);
+        border-color: var(--gold);
+      }
+      .hero-stats {
+        display: flex;
+        gap: 48px;
+        margin-top: 64px;
+        padding-top: 48px;
+        border-top: 1px solid rgba(245, 166, 35, 0.15);
+        flex-wrap: wrap;
+      }
+      .stat-num {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 2.6rem;
+        color: var(--gold);
+        line-height: 1;
+      }
+      .stat-label {
+        font-size: 0.78rem;
+        color: var(--muted);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-top: 4px;
+      }
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="FBA Unchained – Build Your Amazon Private Label Brand" />
-<meta name="twitter:description" content="The complete step-by-step system to launch a profitable Amazon private label business from scratch." />
-<meta name="twitter:image" content="https://fbaunchained.com/assets/og-image.jpg" />
+      section {
+        padding: 100px 48px;
+      }
+      .section-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-family: "DM Mono", monospace;
+        font-size: 0.72rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 20px;
+      }
+      .section-label::before {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 1px;
+        background: var(--gold);
+      }
+      h2 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(2.4rem, 5vw, 4rem);
+        line-height: 1;
+        letter-spacing: 0.03em;
+        color: var(--white);
+        margin-bottom: 16px;
+      }
+      h2 span {
+        color: var(--gold);
+      }
+      .section-intro {
+        max-width: 560px;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.75;
+        margin-bottom: 64px;
+      }
 
-<!-- Favicon placeholder -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛓️‍💥</text></svg>" />
+      #benefits {
+        background: var(--dark2);
+      }
+      .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1px;
+        background: rgba(245, 166, 35, 0.1);
+        border: 1px solid rgba(245, 166, 35, 0.1);
+      }
+      .benefit-card {
+        background: var(--dark2);
+        padding: 40px 36px;
+        transition: background 0.2s;
+      }
+      .benefit-card:hover {
+        background: var(--dark3);
+      }
+      .benefit-icon {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        display: block;
+      }
+      .benefit-card h3 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.3rem;
+        letter-spacing: 0.06em;
+        color: var(--white);
+        margin-bottom: 10px;
+      }
+      .benefit-card p {
+        font-size: 0.88rem;
+        color: var(--muted);
+        line-height: 1.7;
+      }
 
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
-<style>
-  :root {
-    --gold: #F5A623;
-    --gold-light: #FFD280;
-    --dark: #0A0A0A;
-    --dark2: #111111;
-    --dark3: #1A1A1A;
-    --dark4: #222222;
-    --text: #E8E2D6;
-    --muted: #888880;
-    --accent: #FF4D00;
-    --white: #FAF8F4;
-  }
+      #about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
+      }
+      .about-text .section-label {
+        margin-bottom: 16px;
+      }
+      .about-text p {
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 20px;
+      }
+      .result-badges {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-top: 36px;
+      }
+      .badge {
+        background: var(--dark3);
+        border: 1px solid rgba(245, 166, 35, 0.2);
+        padding: 10px 20px;
+        font-family: "DM Mono", monospace;
+        font-size: 0.75rem;
+        color: var(--gold);
+        letter-spacing: 0.1em;
+      }
 
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      #modules {
+        background: var(--dark2);
+      }
+      .modules-header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 48px;
+        gap: 12px;
+      }
+      .modules-header .section-intro {
+        margin-bottom: 0;
+      }
+      .modules-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr));
+        gap: 1px;
+        background: rgba(245, 166, 35, 0.08);
+      }
+      .module-card:last-child {
+        grid-column: 3;
+      }
+      .module-card {
+        background: var(--dark2);
+        padding: 36px 32px;
+        display: flex;
+        gap: 24px;
+        align-items: flex-start;
+        transition: background 0.2s;
+        cursor: default;
+      }
+      .module-card:hover {
+        background: var(--dark3);
+      }
+      .module-num {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 3rem;
+        line-height: 1;
+        color: rgba(245, 166, 35, 0.18);
+        flex-shrink: 0;
+        transition: color 0.2s;
+        min-width: 56px;
+      }
+      .module-card:hover .module-num {
+        color: rgba(245, 166, 35, 0.4);
+      }
+      .module-tag {
+        font-family: "DM Mono", monospace;
+        font-size: 0.65rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 8px;
+      }
+      .module-card h3 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.25rem;
+        letter-spacing: 0.05em;
+        color: var(--white);
+        margin-bottom: 8px;
+      }
+      .module-card p {
+        font-size: 0.85rem;
+        color: var(--muted);
+        line-height: 1.65;
+      }
 
-  html { scroll-behavior: smooth; }
+      #pricing {
+        text-align: center;
+      }
+      .pricing-card {
+        display: inline-block;
+        background: var(--dark3);
+        border: 1px solid rgba(245, 166, 35, 0.25);
+        max-width: 520px;
+        width: 100%;
+        padding: 56px 48px;
+        position: relative;
+        text-align: left;
+      }
+      .pricing-badge {
+        position: absolute;
+        top: -14px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--gold);
+        color: var(--dark);
+        font-family: "DM Mono", monospace;
+        font-size: 0.7rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        padding: 6px 18px;
+        font-weight: 700;
+      }
+      .price-amount {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 5rem;
+        line-height: 1;
+        color: var(--white);
+      }
+      .price-amount sup {
+        font-size: 2rem;
+        vertical-align: super;
+        color: var(--gold);
+      }
+      .price-note {
+        font-size: 0.8rem;
+        color: var(--muted);
+        margin-top: 4px;
+        margin-bottom: 32px;
+      }
+      .price-includes {
+        list-style: none;
+        margin-bottom: 40px;
+      }
+      .price-includes li {
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        font-size: 0.92rem;
+        color: var(--text);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .price-includes li::before {
+        content: "✓";
+        color: var(--gold);
+        font-weight: 700;
+        flex-shrink: 0;
+      }
+      .guarantee {
+        margin-top: 20px;
+        font-size: 0.8rem;
+        color: var(--muted);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: center;
+        text-align: center;
+      }
 
-  body {
-    background: var(--dark);
-    color: var(--text);
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 300;
-    line-height: 1.6;
-    overflow-x: hidden;
-  }
+      #testimonials {
+        background: var(--dark2);
+      }
+      .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 24px;
+      }
+      .testimonial-card {
+        background: var(--dark3);
+        border: 1px solid rgba(245, 166, 35, 0.1);
+        padding: 36px 32px;
+        position: relative;
+      }
+      .testimonial-card::before {
+        content: '"';
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 6rem;
+        color: rgba(245, 166, 35, 0.12);
+        position: absolute;
+        top: 8px;
+        left: 24px;
+        line-height: 1;
+      }
+      .testimonial-stars {
+        color: var(--gold);
+        font-size: 0.85rem;
+        margin-bottom: 16px;
+        letter-spacing: 2px;
+      }
+      .testimonial-text {
+        font-size: 0.95rem;
+        color: var(--text);
+        line-height: 1.75;
+        margin-bottom: 24px;
+        font-style: italic;
+      }
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+      .author-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: var(--dark4);
+        border: 1px solid rgba(245, 166, 35, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+      }
+      .author-name {
+        font-weight: 500;
+        font-size: 0.88rem;
+        color: var(--white);
+      }
+      .author-detail {
+        font-size: 0.75rem;
+        color: var(--gold);
+        font-family: "DM Mono", monospace;
+        letter-spacing: 0.05em;
+      }
 
-  /* ── NAV ── */
-  nav {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 48px;
-    background: rgba(10,10,10,0.92);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(245,166,35,0.15);
-  }
-  .nav-logo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.5rem;
-    letter-spacing: 0.12em;
-    color: var(--gold);
-  }
-  .nav-links {
-    display: flex; gap: 36px; list-style: none;
-  }
-  .nav-links a {
-    color: var(--muted);
-    text-decoration: none;
-    font-size: 0.82rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    transition: color 0.2s;
-  }
-  .nav-links a:hover { color: var(--gold); }
-  .nav-cta {
-    background: var(--gold);
-    color: var(--dark) !important;
-    padding: 9px 22px;
-    font-weight: 700 !important;
-    border-radius: 2px;
-  }
-  .nav-cta:hover { background: var(--gold-light) !important; color: var(--dark) !important; }
+      #faq {
+        max-width: 780px;
+        margin: 0 auto;
+      }
+      .faq-item {
+        border-bottom: 1px solid rgba(245, 166, 35, 0.1);
+        overflow: hidden;
+      }
+      .faq-question {
+        width: 100%;
+        background: none;
+        border: none;
+        color: var(--white);
+        text-align: left;
+        padding: 28px 0;
+        font-family: "DM Sans", sans-serif;
+        font-size: 1.02rem;
+        font-weight: 500;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+      }
+      .faq-icon {
+        color: var(--gold);
+        font-size: 1.4rem;
+        flex-shrink: 0;
+        transition: transform 0.3s;
+        line-height: 1;
+      }
+      .faq-item.open .faq-icon {
+        transform: rotate(45deg);
+      }
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.8;
+      }
+      .faq-answer p {
+        padding-bottom: 28px;
+      }
+      .faq-answer a {
+        color: var(--gold);
+        text-decoration: none;
+      }
+      .faq-answer a:hover {
+        text-decoration: underline;
+      }
+      .faq-item.open .faq-answer {
+        max-height: 300px;
+      }
 
-  /* ── HERO ── */
-  #hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    padding: 140px 48px 80px;
-  }
-  .hero-bg {
-    position: absolute; inset: 0;
-    background:
-      radial-gradient(ellipse 60% 70% at 70% 40%, rgba(245,166,35,0.08) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 50% at 20% 80%, rgba(255,77,0,0.05) 0%, transparent 60%),
-      var(--dark);
-  }
-  .hero-grid {
-    position: absolute; inset: 0;
-    background-image:
-      linear-gradient(rgba(245,166,35,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(245,166,35,0.04) 1px, transparent 1px);
-    background-size: 60px 60px;
-    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black, transparent);
-  }
-  .hero-content {
-    position: relative;
-    max-width: 800px;
-    z-index: 1;
-  }
-  .hero-eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 28px;
-  }
-  .hero-eyebrow::before {
-    content: '';
-    display: block;
-    width: 32px; height: 1px;
-    background: var(--gold);
-  }
-  h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(3.5rem, 8vw, 7rem);
-    line-height: 0.95;
-    letter-spacing: 0.02em;
-    color: var(--white);
-    margin-bottom: 28px;
-  }
-  h1 span { color: var(--gold); }
-  .hero-sub {
-    font-size: 1.15rem;
-    color: var(--muted);
-    max-width: 520px;
-    line-height: 1.7;
-    margin-bottom: 48px;
-    font-weight: 400;
-  }
-  .hero-actions {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    flex-wrap: wrap;
-  }
-  .btn-primary {
-    display: inline-block;
-    background: var(--gold);
-    color: var(--dark);
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    padding: 18px 40px;
-    border-radius: 2px;
-    transition: background 0.2s, transform 0.15s;
-    border: none; cursor: pointer;
-  }
-  .btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
-  .btn-ghost {
-    display: inline-block;
-    color: var(--text);
-    text-decoration: none;
-    font-size: 0.9rem;
-    letter-spacing: 0.05em;
-    padding: 18px 0;
-    border-bottom: 1px solid rgba(232,226,214,0.3);
-    transition: color 0.2s, border-color 0.2s;
-  }
-  .btn-ghost:hover { color: var(--gold); border-color: var(--gold); }
+      #newsletter {
+        background: var(--dark3);
+        border-top: 1px solid rgba(245, 166, 35, 0.12);
+        border-bottom: 1px solid rgba(245, 166, 35, 0.12);
+        text-align: center;
+      }
+      .newsletter-inner {
+        max-width: 560px;
+        margin: 0 auto;
+      }
+      .newsletter-inner h2 {
+        margin-bottom: 12px;
+      }
+      .newsletter-inner p {
+        color: var(--muted);
+        font-size: 1rem;
+        margin-bottom: 36px;
+      }
+      .newsletter-form {
+        display: flex;
+        gap: 0;
+        border: 1px solid rgba(245, 166, 35, 0.3);
+        overflow: hidden;
+      }
+      .newsletter-form input {
+        flex: 1;
+        background: var(--dark);
+        border: none;
+        padding: 16px 20px;
+        color: var(--text);
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.95rem;
+        outline: none;
+      }
+      .newsletter-form input::placeholder {
+        color: var(--muted);
+      }
+      .newsletter-form button {
+        background: var(--gold);
+        color: var(--dark);
+        border: none;
+        padding: 16px 28px;
+        font-weight: 700;
+        font-size: 0.85rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background 0.2s;
+        white-space: nowrap;
+      }
+      .newsletter-form button:hover {
+        background: var(--gold-light);
+      }
+      .lead-magnet {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 16px;
+        font-size: 0.78rem;
+        color: var(--muted);
+        font-family: "DM Mono", monospace;
+        letter-spacing: 0.08em;
+      }
 
-  .hero-stats {
-    display: flex;
-    gap: 48px;
-    margin-top: 64px;
-    padding-top: 48px;
-    border-top: 1px solid rgba(245,166,35,0.15);
-    flex-wrap: wrap;
-  }
-  .stat-item {}
-  .stat-num {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.6rem;
-    color: var(--gold);
-    line-height: 1;
-  }
-  .stat-label {
-    font-size: 0.78rem;
-    color: var(--muted);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-top: 4px;
-  }
+      #final-cta {
+        text-align: center;
+        padding: 120px 48px;
+        position: relative;
+        overflow: visible;
+      }
+      #final-cta::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse 60% 60% at 50% 50%,
+          rgba(245, 166, 35, 0.06) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+      #final-cta h2 {
+        font-size: clamp(3rem, 7vw, 6rem);
+        margin-bottom: 16px;
+      }
+      #final-cta p {
+        color: var(--muted);
+        max-width: 480px;
+        margin: 0 auto 48px;
+        font-size: 1.05rem;
+      }
 
-  /* ── SECTION SHARED ── */
-  section { padding: 100px 48px; }
-  .section-label {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 20px;
-  }
-  .section-label::before {
-    content: '';
-    display: block;
-    width: 24px; height: 1px;
-    background: var(--gold);
-  }
-  h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(2.4rem, 5vw, 4rem);
-    line-height: 1.0;
-    letter-spacing: 0.03em;
-    color: var(--white);
-    margin-bottom: 16px;
-  }
-  h2 span { color: var(--gold); }
-  .section-intro {
-    max-width: 560px;
-    color: var(--muted);
-    font-size: 1.05rem;
-    line-height: 1.75;
-    margin-bottom: 64px;
-  }
+      footer {
+        padding: 40px 48px;
+        border-top: 1px solid rgba(245, 166, 35, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      .footer-logo {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.2rem;
+        letter-spacing: 0.12em;
+        color: var(--gold);
+      }
+      footer p {
+        font-size: 0.78rem;
+        color: var(--muted);
+        letter-spacing: 0.05em;
+      }
+      .footer-links {
+        display: flex;
+        gap: 16px 28px;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .footer-links a {
+        font-size: 0.78rem;
+        color: var(--muted);
+        text-decoration: none;
+        letter-spacing: 0.05em;
+        transition: color 0.2s;
+        white-space: nowrap;
+      }
+      .footer-links a:hover {
+        color: var(--gold);
+      }
 
-  /* ── WHAT YOU'LL LEARN ── */
-  #benefits { background: var(--dark2); }
-  .benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1px;
-    background: rgba(245,166,35,0.1);
-    border: 1px solid rgba(245,166,35,0.1);
-  }
-  .benefit-card {
-    background: var(--dark2);
-    padding: 40px 36px;
-    transition: background 0.2s;
-  }
-  .benefit-card:hover { background: var(--dark3); }
-  .benefit-icon {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    display: block;
-  }
-  .benefit-card h3 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.3rem;
-    letter-spacing: 0.06em;
-    color: var(--white);
-    margin-bottom: 10px;
-  }
-  .benefit-card p {
-    font-size: 0.88rem;
-    color: var(--muted);
-    line-height: 1.7;
-  }
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(24px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .hero-content > * {
+        opacity: 0;
+        animation: fadeUp 0.7s ease forwards;
+      }
+      .hero-eyebrow {
+        animation-delay: 0.1s;
+      }
+      h1 {
+        animation-delay: 0.25s;
+      }
+      .hero-sub {
+        animation-delay: 0.4s;
+      }
+      .hero-actions {
+        animation-delay: 0.55s;
+      }
+      .hero-stats {
+        animation-delay: 0.7s;
+      }
 
-  /* ── ABOUT ── */
-  #about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: center;
-  }
-  .about-img-wrap {
-    position: relative;
-  }
-  .about-img-placeholder {
-    width: 100%;
-    aspect-ratio: 4/5;
-    background: var(--dark3);
-    border: 1px solid rgba(245,166,35,0.15);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    color: var(--muted);
-    font-size: 0.8rem;
-    letter-spacing: 0.08em;
-  }
-  .about-img-placeholder .icon { font-size: 2.5rem; opacity: 0.3; }
-  .about-accent {
-    position: absolute;
-    bottom: -20px; right: -20px;
-    width: 120px; height: 120px;
-    border: 2px solid var(--gold);
-    z-index: -1;
-  }
-  .about-text .section-label { margin-bottom: 16px; }
-  .about-text p {
-    color: var(--muted);
-    font-size: 1rem;
-    line-height: 1.8;
-    margin-bottom: 20px;
-  }
-  .result-badges {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin-top: 36px;
-  }
-  .badge {
-    background: var(--dark3);
-    border: 1px solid rgba(245,166,35,0.2);
-    padding: 10px 20px;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
-    color: var(--gold);
-    letter-spacing: 0.1em;
-  }
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        padding: 4px;
+        background: none;
+        border: none;
+      }
+      .hamburger span {
+        display: block;
+        width: 24px;
+        height: 2px;
+        background: var(--text);
+        transition:
+          transform 0.3s,
+          opacity 0.3s;
+      }
+      .hamburger.open span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+      .hamburger.open span:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger.open span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
 
-  /* ── MODULES ── */
-  #modules { background: var(--dark2); }
-  .modules-header {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 48px;
-    gap: 12px;
-  }
-  .modules-header .section-intro { margin-bottom: 0; }
-  .modules-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr));
-    gap: 1px;
-    background: rgba(245,166,35,0.08);
-  }
-  .module-card:last-child { grid-column: 3; }
-  .module-card {
-    background: var(--dark2);
-    padding: 36px 32px;
-    display: flex;
-    gap: 24px;
-    align-items: flex-start;
-    transition: background 0.2s;
-    cursor: default;
-  }
-  .module-card:hover { background: var(--dark3); }
-  .module-num {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 3rem;
-    line-height: 1;
-    color: rgba(245,166,35,0.18);
-    flex-shrink: 0;
-    transition: color 0.2s;
-    min-width: 56px;
-  }
-  .module-card:hover .module-num { color: rgba(245,166,35,0.4); }
-  .module-body {}
-  .module-tag {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 8px;
-  }
-  .module-card h3 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.25rem;
-    letter-spacing: 0.05em;
-    color: var(--white);
-    margin-bottom: 8px;
-  }
-  .module-card p {
-    font-size: 0.85rem;
-    color: var(--muted);
-    line-height: 1.65;
-  }
-  .module-placeholder {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    margin-top: 10px;
-    font-size: 0.75rem;
-    color: rgba(245,166,35,0.4);
-    font-style: italic;
-  }
+      @media (max-width: 900px) {
+        nav {
+          padding: 16px 24px;
+        }
+        .nav-links {
+          display: none;
+          position: fixed;
+          top: 61px;
+          left: 0;
+          right: 0;
+          background: rgba(10, 10, 10, 0.98);
+          backdrop-filter: blur(12px);
+          flex-direction: column;
+          align-items: center;
+          gap: 0;
+          padding: 16px 0 24px;
+          border-bottom: 1px solid rgba(245, 166, 35, 0.15);
+          z-index: 99;
+        }
+        .nav-links.open {
+          display: flex;
+        }
+        .nav-links li {
+          width: 100%;
+          text-align: center;
+        }
+        .nav-links a {
+          display: block;
+          padding: 14px 24px;
+          font-size: 0.9rem;
+        }
+        .nav-cta {
+          margin: 8px 24px 0;
+          display: block;
+        }
+        .hamburger {
+          display: flex;
+        }
+        section {
+          padding: 64px 20px;
+        }
+        #hero {
+          padding: 110px 20px 64px;
+        }
+        #about {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+        #final-cta {
+          padding: 80px 20px;
+        }
+        #final-cta h2 {
+          font-size: clamp(2.4rem, 8vw, 4rem);
+        }
+        .hero-stats {
+          gap: 28px;
+        }
+        .benefits-grid {
+          grid-template-columns: 1fr;
+        }
+        .modules-list {
+          grid-template-columns: 1fr;
+        }
+        .module-card:last-child {
+          grid-column: 1;
+        }
+        .modules-header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .modules-header .section-intro {
+          width: 100%;
+        }
+        #pricing > div {
+          flex-direction: column;
+          align-items: center;
+        }
+        .pricing-card {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+        .testimonials-grid {
+          grid-template-columns: 1fr;
+        }
+        .faq-question {
+          font-size: 0.95rem;
+        }
+        .newsletter-form {
+          flex-direction: column;
+        }
+        .newsletter-form button {
+          width: 100%;
+        }
+        section h2,
+        section .section-label,
+        section .section-intro,
+        section p:not(.guarantee):not(.price-note) {
+          text-align: left;
+        }
+        #pricing h2,
+        #pricing .section-label,
+        #pricing .section-intro,
+        #newsletter h2,
+        #newsletter .section-label,
+        #newsletter p,
+        #final-cta h2,
+        #final-cta .section-label,
+        #final-cta p {
+          text-align: center;
+        }
+        .section-label {
+          justify-content: flex-start;
+        }
+        #pricing .section-label,
+        #newsletter .section-label,
+        #final-cta .section-label {
+          justify-content: center;
+        }
+        footer {
+          flex-direction: column;
+          text-align: center;
+        }
+        .footer-links {
+          gap: 12px 16px;
+        }
+        .footer-links a {
+          font-size: 0.7rem;
+          letter-spacing: 0.03em;
+        }
+        .module-card {
+          padding: 28px 20px;
+        }
+        .module-num {
+          font-size: 2.2rem;
+          min-width: 44px;
+        }
+        .benefit-card {
+          padding: 32px 24px;
+        }
+        .testimonial-card {
+          padding: 28px 24px;
+        }
+        .pricing-card {
+          padding: 40px 28px;
+        }
+        .price-amount {
+          font-size: 4rem;
+        }
+      }
 
-  /* ── PRICING ── */
-  #pricing {
-    text-align: center;
-  }
-  .pricing-card {
-    display: inline-block;
-    background: var(--dark3);
-    border: 1px solid rgba(245,166,35,0.25);
-    max-width: 520px;
-    width: 100%;
-    padding: 56px 48px;
-    position: relative;
-    text-align: left;
-  }
-  .pricing-badge {
-    position: absolute;
-    top: -14px; left: 50%;
-    transform: translateX(-50%);
-    background: var(--gold);
-    color: var(--dark);
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    padding: 6px 18px;
-    font-weight: 700;
-  }
-  .price-amount {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 5rem;
-    line-height: 1;
-    color: var(--white);
-  }
-  .price-amount sup {
-    font-size: 2rem;
-    vertical-align: super;
-    color: var(--gold);
-  }
-  .price-note {
-    font-size: 0.8rem;
-    color: var(--muted);
-    margin-top: 4px;
-    margin-bottom: 32px;
-  }
-  .price-includes {
-    list-style: none;
-    margin-bottom: 40px;
-  }
-  .price-includes li {
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-    font-size: 0.92rem;
-    color: var(--text);
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  .price-includes li::before {
-    content: '✓';
-    color: var(--gold);
-    font-weight: 700;
-    flex-shrink: 0;
-  }
-  .guarantee {
-    margin-top: 20px;
-    font-size: 0.8rem;
-    color: var(--muted);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    justify-content: center;
-    text-align: center;
-  }
-
-  /* ── TESTIMONIALS ── */
-  #testimonials { background: var(--dark2); }
-  .testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 24px;
-  }
-  .testimonial-card {
-    background: var(--dark3);
-    border: 1px solid rgba(245,166,35,0.1);
-    padding: 36px 32px;
-    position: relative;
-  }
-  .testimonial-card::before {
-    content: '"';
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 6rem;
-    color: rgba(245,166,35,0.12);
-    position: absolute;
-    top: 8px; left: 24px;
-    line-height: 1;
-  }
-  .testimonial-stars {
-    color: var(--gold);
-    font-size: 0.85rem;
-    margin-bottom: 16px;
-    letter-spacing: 2px;
-  }
-  .testimonial-text {
-    font-size: 0.95rem;
-    color: var(--text);
-    line-height: 1.75;
-    margin-bottom: 24px;
-    font-style: italic;
-  }
-  .testimonial-author {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-  }
-  .author-avatar {
-    width: 40px; height: 40px;
-    border-radius: 50%;
-    background: var(--dark4);
-    border: 1px solid rgba(245,166,35,0.2);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 1rem;
-  }
-  .author-name {
-    font-weight: 500;
-    font-size: 0.88rem;
-    color: var(--white);
-  }
-  .author-detail {
-    font-size: 0.75rem;
-    color: var(--gold);
-    font-family: 'DM Mono', monospace;
-    letter-spacing: 0.05em;
-  }
-
-  /* ── FAQ ── */
-  #faq { max-width: 780px; margin: 0 auto; }
-  .faq-item {
-    border-bottom: 1px solid rgba(245,166,35,0.1);
-    overflow: hidden;
-  }
-  .faq-question {
-    width: 100%;
-    background: none;
-    border: none;
-    color: var(--white);
-    text-align: left;
-    padding: 28px 0;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.02rem;
-    font-weight: 500;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-  }
-  .faq-icon {
-    color: var(--gold);
-    font-size: 1.4rem;
-    flex-shrink: 0;
-    transition: transform 0.3s;
-    line-height: 1;
-  }
-  .faq-item.open .faq-icon { transform: rotate(45deg); }
-  .faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.35s ease;
-    color: var(--muted);
-    font-size: 0.95rem;
-    line-height: 1.8;
-  }
-  .faq-answer a { color: var(--gold); text-decoration: none; }
-  .faq-answer a:hover { text-decoration: underline; }
-  .faq-item.open .faq-answer { max-height: 300px; }
-
-  /* ── NEWSLETTER ── */
-  #newsletter {
-    background: var(--dark3);
-    border-top: 1px solid rgba(245,166,35,0.12);
-    border-bottom: 1px solid rgba(245,166,35,0.12);
-    text-align: center;
-  }
-  .newsletter-inner { max-width: 560px; margin: 0 auto; }
-  .newsletter-inner h2 { margin-bottom: 12px; }
-  .newsletter-inner p {
-    color: var(--muted);
-    font-size: 1rem;
-    margin-bottom: 36px;
-  }
-  .newsletter-form {
-    display: flex;
-    gap: 0;
-    border: 1px solid rgba(245,166,35,0.3);
-    overflow: hidden;
-  }
-  .newsletter-form input {
-    flex: 1;
-    background: var(--dark);
-    border: none;
-    padding: 16px 20px;
-    color: var(--text);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.95rem;
-    outline: none;
-  }
-  .newsletter-form input::placeholder { color: var(--muted); }
-  .newsletter-form button {
-    background: var(--gold);
-    color: var(--dark);
-    border: none;
-    padding: 16px 28px;
-    font-weight: 700;
-    font-size: 0.85rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background 0.2s;
-    white-space: nowrap;
-  }
-  .newsletter-form button:hover { background: var(--gold-light); }
-  .lead-magnet {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 16px;
-    font-size: 0.78rem;
-    color: var(--muted);
-    font-family: 'DM Mono', monospace;
-    letter-spacing: 0.08em;
-  }
-
-  /* ── FINAL CTA ── */
-  #final-cta {
-    text-align: center;
-    padding: 120px 48px;
-    position: relative;
-    overflow: visible;
-  }
-  #final-cta::before {
-    content: '';
-    position: absolute; inset: 0;
-    background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(245,166,35,0.06) 0%, transparent 70%);
-    pointer-events: none;
-  }
-  #final-cta h2 { font-size: clamp(3rem, 7vw, 6rem); margin-bottom: 16px; }
-  #final-cta p {
-    color: var(--muted);
-    max-width: 480px;
-    margin: 0 auto 48px;
-    font-size: 1.05rem;
-  }
-
-  /* ── FOOTER ── */
-  footer {
-    padding: 40px 48px;
-    border-top: 1px solid rgba(245,166,35,0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  .footer-logo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.2rem;
-    letter-spacing: 0.12em;
-    color: var(--gold);
-  }
-  footer p {
-    font-size: 0.78rem;
-    color: var(--muted);
-    letter-spacing: 0.05em;
-  }
-  .footer-links {
-    display: flex; gap: 28px; list-style: none;
-  }
-  .footer-links a {
-    font-size: 0.78rem;
-    color: var(--muted);
-    text-decoration: none;
-    letter-spacing: 0.05em;
-    transition: color 0.2s;
-  }
-  .footer-links a:hover { color: var(--gold); }
-
-  /* ── ANIMATIONS ── */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(24px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  .hero-content > * {
-    opacity: 0;
-    animation: fadeUp 0.7s ease forwards;
-  }
-  .hero-eyebrow  { animation-delay: 0.1s; }
-  h1             { animation-delay: 0.25s; }
-  .hero-sub      { animation-delay: 0.4s; }
-  .hero-actions  { animation-delay: 0.55s; }
-  .hero-stats    { animation-delay: 0.7s; }
-
-  /* ── RESPONSIVE ── */
-  /* ── HAMBURGER ── */
-  .hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-    padding: 4px;
-    background: none;
-    border: none;
-  }
-  .hamburger span {
-    display: block;
-    width: 24px; height: 2px;
-    background: var(--text);
-    transition: transform 0.3s, opacity 0.3s;
-  }
-  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-  .hamburger.open span:nth-child(2) { opacity: 0; }
-  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-  @media (max-width: 900px) {
-    nav { padding: 16px 24px; }
-    .nav-links {
-      display: none;
-      position: fixed;
-      top: 61px; left: 0; right: 0;
-      background: rgba(10,10,10,0.98);
-      backdrop-filter: blur(12px);
-      flex-direction: column;
-      align-items: center;
-      gap: 0;
-      padding: 16px 0 24px;
-      border-bottom: 1px solid rgba(245,166,35,0.15);
-      z-index: 99;
-    }
-    .nav-links.open { display: flex; }
-    .nav-links li { width: 100%; text-align: center; }
-    .nav-links a { display: block; padding: 14px 24px; font-size: 0.9rem; }
-    .nav-cta { margin: 8px 24px 0; display: block; }
-    .hamburger { display: flex; }
-
-    /* Sections */
-    section { padding: 64px 20px; }
-    #hero { padding: 110px 20px 64px; }
-    #about { grid-template-columns: 1fr; gap: 40px; }
-    .about-accent { display: none; }
-    #final-cta { padding: 80px 20px; }
-    #final-cta h2 { font-size: clamp(2.4rem, 8vw, 4rem); }
-
-    /* Hero stats */
-    .hero-stats { gap: 28px; }
-
-    /* Benefits */
-    .benefits-grid { grid-template-columns: 1fr; }
-
-    /* Modules */
-    .modules-list { grid-template-columns: 1fr; }
-    .module-card:last-child { grid-column: 1; }
-    .modules-header { flex-direction: column; align-items: flex-start; }
-    .modules-header .section-intro { width: 100%; }
-
-    /* Zoom section */
-    #results { padding: 64px 20px; }
-
-    /* Pricing */
-    #pricing > div { flex-direction: column; align-items: center; }
-    .pricing-card { max-width: 100% !important; width: 100% !important; }
-
-    /* Student results stats */
-    .results-stat-box { padding: 28px 16px !important; }
-
-    /* Testimonials */
-    .testimonials-grid { grid-template-columns: 1fr; }
-
-    /* FAQ */
-    .faq-question { font-size: 0.95rem; }
-
-    /* Newsletter */
-    .newsletter-form { flex-direction: column; }
-    .newsletter-form button { width: 100%; }
-
-    /* Text alignment — left-align all section content on mobile */
-    section h2,
-    section .section-label,
-    section .section-intro,
-    section p:not(.guarantee):not(.price-note) { text-align: left; }
-
-    /* Keep intentionally centered sections */
-    #pricing h2, #pricing .section-label, #pricing .section-intro,
-    #newsletter h2, #newsletter .section-label, #newsletter p,
-    #final-cta h2, #final-cta .section-label, #final-cta p { text-align: center; }
-    .section-label { justify-content: flex-start; }
-    #pricing .section-label,
-    #newsletter .section-label,
-    #final-cta .section-label { justify-content: center; }
-
-    /* Footer */
-    footer { flex-direction: column; text-align: center; }
-
-    /* Module card */
-    .module-card { padding: 28px 20px; }
-    .module-num { font-size: 2.2rem; min-width: 44px; }
-
-    /* Benefit card */
-    .benefit-card { padding: 32px 24px; }
-
-    /* About image */
-    .about-img-placeholder { aspect-ratio: 3/2; }
-
-    /* Testimonial card */
-    .testimonial-card { padding: 28px 24px; }
-
-    /* Pricing card */
-    .pricing-card { padding: 40px 28px; }
-    .price-amount { font-size: 4rem; }
-  }
-
-  @media (max-width: 500px) {
-    h1 { font-size: clamp(2.8rem, 12vw, 5rem); }
-    .hero-actions { flex-direction: column; align-items: flex-start; }
-    .btn-primary { width: 100%; text-align: center; }
-    .result-badges { flex-direction: column; }
-    .hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 24px; }
-
-    /* Smaller padding on very small screens */
-    section { padding: 52px 16px; }
-    #hero { padding: 100px 16px 52px; }
-    nav { padding: 14px 16px; }
-
-    /* Module card stack tighter */
-    .module-card { flex-direction: column; gap: 8px; }
-    .module-num { font-size: 1.8rem; min-width: unset; }
-
-    /* Pricing */
-    .pricing-card { padding: 32px 20px; }
-    .price-amount { font-size: 3.2rem; }
-
-    /* FAQ */
-    .faq-question { font-size: 0.88rem; gap: 12px; }
-  }
-</style>
-</head>
-<body>
-
-<!-- NAV -->
-<nav>
-  <div class="nav-logo">
-    <span style="font-size:1.3rem; margin-right:6px;">⛓️‍💥</span>FBA Unchained
-  </div>
-  <button class="hamburger" id="hamburger" onclick="toggleNav()" aria-label="Toggle menu">
-    <span></span><span></span><span></span>
-  </button>
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#benefits">Benefits</a></li>
-    <li><a href="#modules">Modules</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#testimonials">Results</a></li>
-    <li><a href="#faq">FAQ</a></li>
-    <li><a href="https://buy.stripe.com/28E3cv2Fv6vfg66bMhe7m02" target="_blank" rel="noopener noreferrer" class="nav-cta">Enroll Now</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-grid"></div>
-  <div class="hero-content">
-    <div class="hero-eyebrow">Amazon Private Label Course</div>
-    <h1>Build Your Own<br><span>Brand on Amazon.</span><br>Keep the Profits.</h1>
-    <p class="hero-sub">The complete private label system to research winning products, create your own brand, source from manufacturers, and launch a profitable Amazon business from scratch.</p>
-    <div class="hero-actions">
-      <a href="https://buy.stripe.com/28E3cv2Fv6vfg66bMhe7m02" target="_blank" rel="noopener noreferrer" class="btn-primary">Enroll Now</a>
-      <a href="#modules" class="btn-ghost">See what's inside ↓</a>
-    </div>
-    <div class="hero-stats">
-      <div class="stat-item">
-        <div class="stat-num" id="students-count">0</div>
-        <div class="stat-label">Students Enrolled</div>
+      @media (max-width: 500px) {
+        h1 {
+          font-size: clamp(2.8rem, 12vw, 5rem);
+        }
+        .hero-actions {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .btn-primary {
+          width: 100%;
+          text-align: center;
+        }
+        .result-badges {
+          flex-direction: column;
+        }
+        .hero-stats {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 32px 24px;
+        }
+        section {
+          padding: 52px 16px;
+        }
+        #hero {
+          padding: 100px 16px 52px;
+        }
+        nav {
+          padding: 14px 16px;
+        }
+        .module-card {
+          flex-direction: column;
+          gap: 8px;
+        }
+        .module-num {
+          font-size: 1.8rem;
+          min-width: unset;
+        }
+        .pricing-card {
+          padding: 32px 20px;
+        }
+        .price-amount {
+          font-size: 3.2rem;
+        }
+        .faq-question {
+          font-size: 0.88rem;
+          gap: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo">
+        <span style="font-size: 1.3rem; margin-right: 6px">⛓️‍💥</span>FBA
+        Unchained
       </div>
-      <div class="stat-item">
-        <div class="stat-num">11</div>
-        <div class="stat-label">In-Depth Modules</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">0</div>
-        <div class="stat-label">Experience Required</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">7-Day</div>
-        <div class="stat-label">Money-Back Guarantee</div>
-      </div>
-    </div>
-  </div>
-</section>
+      <button
+        class="hamburger"
+        id="hamburger"
+        onclick="toggleNav()"
+        aria-label="Toggle menu"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#modules">Modules</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Results</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li>
+          <a
+            href="https://buy.stripe.com/28E3cv2Fv6vfg66bMhe7m02"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="nav-cta"
+            >Enroll Now</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-<!-- BENEFITS -->
-<section id="benefits">
-  <div class="section-label">What You'll Learn</div>
-  <h2>Everything You Need to <span>Launch Your Own Brand</span></h2>
-  <p class="section-intro">This isn't theory. Every lesson is built around what actually works in today's private label market, tested by a real seller who still runs their Amazon brand every single day.</p>
-  <div class="benefits-grid">
-    <div class="benefit-card">
-      <span class="benefit-icon">🔍</span>
-      <h3>Find a Winning Private Label Product</h3>
-      <p>Learn the exact criteria and tools to identify low-competition niches where you can launch your own branded product and dominate the listing.</p>
-    </div>
-    <div class="benefit-card">
-      <span class="benefit-icon">🏷️</span>
-      <h3>Create Your Own Brand From Scratch</h3>
-      <p>Build a real brand, from naming and logo to packaging and Amazon Brand Registry. Stand out from generic resellers and command higher prices.</p>
-    </div>
-    <div class="benefit-card">
-      <span class="benefit-icon">🏭</span>
-      <h3>Source Direct From Manufacturers</h3>
-      <p>Navigate Alibaba and alternative factories to find quality suppliers, get samples, negotiate pricing, and customize your product with your branding.</p>
-    </div>
-    <div class="benefit-card">
-      <span class="benefit-icon">✍️</span>
-      <h3>Listings That Rank & Convert</h3>
-      <p>Write keyword-optimized titles, bullets, and descriptions. Build out professional A+ Content that turns browsers into buyers.</p>
-    </div>
-    <div class="benefit-card">
-      <span class="benefit-icon">💰</span>
-      <h3>Run Profitable PPC Campaigns</h3>
-      <p>Master Amazon Sponsored Products ads to launch fast, rank organically, and scale your brand's visibility without burning through your budget.</p>
-    </div>
-    <div class="benefit-card">
-      <span class="benefit-icon">🚀</span>
-      <h3>Scale Your Brand to 6 Figures</h3>
-      <p>Once your first product is profitable, learn how to expand your product line, protect your brand, and build an asset you can eventually sell.</p>
-    </div>
-  </div>
-</section>
+    <section id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <div class="hero-eyebrow">Amazon Private Label Mentorship</div>
+        <h1>
+          Build Your Own<br /><span>Brand on Amazon.</span><br />Keep the
+          Profits.
+        </h1>
+        <p class="hero-sub">
+          The complete private label system to research winning products, create
+          your own brand, source from manufacturers, and launch a profitable
+          Amazon business from scratch.
+        </p>
+        <div class="hero-actions">
+          <a
+            href="https://buy.stripe.com/28E3cv2Fv6vfg66bMhe7m02"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary"
+            >Enroll Now</a
+          >
+          <a href="#modules" class="btn-ghost">See what's inside ↓</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num" id="students-count">0</div>
+            <div class="stat-label">Students Enrolled</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">11</div>
+            <div class="stat-label">In-Depth Modules</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">0</div>
+            <div class="stat-label">Experience Required</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">7-Day</div>
+            <div class="stat-label">Money-Back Guarantee</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- ABOUT -->
-<section id="about">
-  <!-- PHOTO PLACEHOLDER — uncomment when ready
+    <section id="benefits">
+      <div class="section-label">What You'll Learn</div>
+      <h2>Everything You Need to <span>Launch Your Own Brand</span></h2>
+      <p class="section-intro">
+        This isn't theory. Every lesson is built around what actually works in
+        today's private label market, tested by a real seller who still runs
+        their Amazon brand every single day.
+      </p>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <span class="benefit-icon">🔍</span>
+          <h3>Find a Winning Private Label Product</h3>
+          <p>
+            Learn the exact criteria and tools to identify low-competition
+            niches where you can launch your own branded product and dominate
+            the listing.
+          </p>
+        </div>
+        <div class="benefit-card">
+          <span class="benefit-icon">🏷️</span>
+          <h3>Create Your Own Brand From Scratch</h3>
+          <p>
+            Build a real brand, from naming and logo to packaging and Amazon
+            Brand Registry. Stand out from generic resellers and command higher
+            prices.
+          </p>
+        </div>
+        <div class="benefit-card">
+          <span class="benefit-icon">🏭</span>
+          <h3>Source Direct From Manufacturers</h3>
+          <p>
+            Navigate Alibaba and alternative factories to find quality
+            suppliers, get samples, negotiate pricing, and customize your
+            product with your branding.
+          </p>
+        </div>
+        <div class="benefit-card">
+          <span class="benefit-icon">✍️</span>
+          <h3>Listings That Rank &amp; Convert</h3>
+          <p>
+            Write keyword-optimized titles, bullets, and descriptions. Build out
+            professional A+ Content that turns browsers into buyers.
+          </p>
+        </div>
+        <div class="benefit-card">
+          <span class="benefit-icon">💰</span>
+          <h3>Run Profitable PPC Campaigns</h3>
+          <p>
+            Master Amazon Sponsored Products ads to launch fast, rank
+            organically, and scale your brand's visibility without burning
+            through your budget.
+          </p>
+        </div>
+        <div class="benefit-card">
+          <span class="benefit-icon">🚀</span>
+          <h3>Scale Your Brand to 6 Figures</h3>
+          <p>
+            Once your first product is profitable, learn how to expand your
+            product line, protect your brand, and build an asset you can
+            eventually sell.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <!-- PHOTO PLACEHOLDER — uncomment when ready
   <div class="about-img-wrap">
-    <div class="about-img-placeholder">
-      <span class="icon">📷</span>
-      <span>Your Photo Here</span>
-    </div>
+    <div class="about-img-placeholder"><span class="icon">📷</span><span>Your Photo Here</span></div>
     <div class="about-accent"></div>
   </div>
   -->
-  <div class="about-text">
-    <div class="section-label">Your Instructor</div>
-    <h2>Built By a <span>Real Brand Owner,</span><br>Not a Guru</h2>
-    <p>I started my first Amazon private label brand in 2020 with $2,000 and turned it into a 6-figure business within 18 months. I'm not a "motivational speaker". I'm an active seller who still runs my private label brand every day.</p>
-    <p>After helping friends and family members launch their own brands, I realized the information people needed was scattered, outdated, or buried behind expensive masterminds. So I built the course I wish I had on day one.</p>
-    <p>Over 150 students have gone through FBA Unchained and launched their own private label brands on Amazon. From complete beginners to people who had tried before and needed a real system.</p>
-    <div class="result-badges">
-      <div class="badge">7-Figure Brand Owner</div>
-      <div class="badge">Amazon Brand Registry</div>
-      <div class="badge">Active Since 2020</div>
-    </div>
-  </div>
-</section>
-
-<!-- MODULES -->
-<section id="modules">
-  <div class="modules-header">
-    <div>
-      <div class="section-label">Course Curriculum</div>
-      <h2>11 Modules. Zero <span>Fluff.</span></h2>
-    </div>
-    <p class="section-intro">Every module is designed to move you forward. You'll go from understanding how private label works all the way to building your brand, running ads, and scaling your revenue.</p>
-  </div>
-  <div class="modules-list">
-
-    <div class="module-card">
-      <div class="module-num">01</div>
-      <div class="module-body">
-        <div class="module-tag">Foundation</div>
-        <h3>Setting Up Your Business</h3>
-        <p>Get your foundation right from day one. We walk through creating your Amazon Seller Central account and setting up your legal business structure. An LLC if you're in the US, or a Corp if you're in Canada.</p>
+      <div class="about-text">
+        <div class="section-label">Your Instructor</div>
+        <h2>Built By a <span>Real Brand Owner,</span><br />Not a Guru</h2>
+        <p>
+          I started my first Amazon private label brand in 2020 with $2,000 and
+          turned it into a 6-figure business within 18 months. I'm not a
+          "motivational speaker". I'm an active seller who still runs my private
+          label brand every day.
+        </p>
+        <p>
+          After helping friends and family members launch their own brands, I
+          realized the information people needed was scattered, outdated, or
+          buried behind expensive masterminds. So I built the course I wish I
+          had on day one.
+        </p>
+        <p>
+          Over 150 students have gone through FBA Unchained and launched their
+          own private label brands on Amazon. From complete beginners to people
+          who had tried before and needed a real system.
+        </p>
+        <div class="result-badges">
+          <div class="badge">7-Figure Brand Owner</div>
+          <div class="badge">Amazon Brand Registry</div>
+          <div class="badge">Active Since 2020</div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="module-card">
-      <div class="module-num">02</div>
-      <div class="module-body">
-        <div class="module-tag">Research</div>
-        <h3>Product Research</h3>
-        <p>Learn how to use product research tools to find profitable niches with real demand and manageable competition. We also cover how to analyze negative reviews to identify differentiation opportunities your competitors are missing.</p>
+    <section id="modules">
+      <div class="modules-header">
+        <div>
+          <div class="section-label">Course Curriculum</div>
+          <h2>11 Modules. Zero <span>Fluff.</span></h2>
+        </div>
+        <p class="section-intro">
+          Every module is designed to move you forward. You'll go from
+          understanding how private label works all the way to building your
+          brand, running ads, and scaling your revenue.
+        </p>
       </div>
-    </div>
+      <div class="modules-list">
+        <div class="module-card">
+          <div class="module-num">01</div>
+          <div class="module-body">
+            <div class="module-tag">Foundation</div>
+            <h3>Setting Up Your Business</h3>
+            <p>
+              Get your foundation right from day one. We walk through creating
+              your Amazon Seller Central account and setting up your legal
+              business structure. An LLC if you're in the US, or a Corp if
+              you're in Canada.
+            </p>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-num">02</div>
+          <div class="module-body">
+            <div class="module-tag">Research</div>
+            <h3>Product Research</h3>
+            <p>
+              Learn how to use product research tools to find profitable niches
+              with real demand and manageable competition. We also cover how to
+              analyze negative reviews to identify differentiation opportunities
+              your competitors are missing.
+            </p>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-num">03</div>
+          <div class="module-body">
+            <div class="module-tag">Sourcing</div>
+            <h3>Sourcing Your Product</h3>
+            <p>
+              Find reliable manufacturers on Alibaba and beyond. Learn how to
+              request samples, compare quality, and negotiate pricing, MOQ
+              (Minimum Order Quantity), and delivery terms so you get the best
+              deal on your first order.
+            </p>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-num">04</div>
+          <div class="module-body">
+            <div class="module-tag">Branding</div>
+            <h3>Branding &amp; Packaging</h3>
+            <p>
+              Build a brand that stands out. We cover logo design, packaging
+              strategy, sustainability considerations, and how to craft a brand
+              story that connects with customers and sets you apart from generic
+              competitors.
+            </p>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-num">05</div>
+          <div class="module-body">
+            <div class="module-tag">Listing</div>
+            <h3>Product Listing Optimization</h3>
+            <p>
+              Write keyword-rich titles, compelling bullet points, and detailed
+              descriptions that convert. Learn Amazon SEO fundamentals and how
+              to brief a photographer for product images that convert.
+            </p>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-num">06</div>
+          <div class="module-body">
+            <div class="module-tag">Reviews</div>
+            <h3>Getting Your First Reviews</h3>
+            <p>
+              Understand how Amazon's Early Reviewer Program and Vine work, and
+              how to ethically build your review base early. We cover what's
+              allowed, what gets accounts banned, and the right way to generate
+              social proof from day one.
+            </p>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-num">07</div>
+          <div class="module-body">
+            <div class="module-tag">Launch</div>
+            <h3>Launch Strategy</h3>
+            <p>
+              Execute a launch that gets traction fast. Learn how to run Amazon
+              PPC campaigns from scratch, structure limited-time promotions, and
+              use early advertising spend to climb the rankings and build
+              organic momentum.
+            </p>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-num">08</div>
+          <div class="module-body">
+            <div class="module-tag">Fulfillment</div>
+            <h3>Fulfillment by Amazon (FBA)</h3>
+            <p>
+              Understand exactly how FBA works and how to prep your products to
+              Amazon's guidelines. Learn how to ship inventory to fulfillment
+              centers (your supplier can handle this), and let Amazon take care
+              of storage, packing, and delivery.
+            </p>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-num">09</div>
+          <div class="module-body">
+            <div class="module-tag">Marketing</div>
+            <h3>Ongoing Marketing &amp; Promotion</h3>
+            <p>
+              Scale beyond your launch. We cover email marketing to gather
+              reviews and cross-sell products, Amazon Sponsored Ads strategy,
+              and how to tap into external channels like social media and
+              influencers to drive traffic to your listing.
+            </p>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-num">10</div>
+          <div class="module-body">
+            <div class="module-tag">Growth</div>
+            <h3>Monitor &amp; Adapt</h3>
+            <p>
+              Turn your launch into a long-term business. Learn how to analyze
+              customer reviews for product improvements, adjust pricing based on
+              demand and competition, and continuously optimize your PPC
+              campaigns based on real performance data.
+            </p>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-num">11</div>
+          <div class="module-body">
+            <div class="module-tag">Scaling</div>
+            <h3>Stand Out &amp; Scale</h3>
+            <p>
+              Build a brand that competitors can't easily copy. We cover
+              crafting a strong Unique Value Proposition, focusing on quality
+              over quantity, diversifying your marketing channels beyond Amazon,
+              and educating your buyers to create loyal long-term customers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="module-card">
-      <div class="module-num">03</div>
-      <div class="module-body">
-        <div class="module-tag">Sourcing</div>
-        <h3>Sourcing Your Product</h3>
-        <p>Find reliable manufacturers on Alibaba and beyond. Learn how to request samples, compare quality, and negotiate pricing, MOQ (Minimum Order Quantity), and delivery terms so you get the best deal on your first order.</p>
+    <!-- ZOOM CALLOUT -->
+    <section style="background: var(--dark); padding: 80px 48px">
+      <div
+        style="
+          max-width: 900px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 48px;
+          align-items: center;
+        "
+      >
+        <div>
+          <div class="section-label">Live Support</div>
+          <h2>You're Not Doing <span>This Alone.</span></h2>
+          <p
+            style="
+              color: var(--muted);
+              font-size: 1.05rem;
+              line-height: 1.8;
+              margin-bottom: 28px;
+            "
+          >
+            Most courses dump a folder of videos on you and disappear. Not this
+            one. Every week I host a
+            <strong style="color: var(--text)">live Zoom call</strong> where you
+            can ask me anything: product research, supplier issues, PPC
+            problems, you name it.
+          </p>
+          <p style="color: var(--muted); font-size: 1.05rem; line-height: 1.8">
+            Whether you're just getting started or you're stuck on something
+            specific, you'll always have a direct line to someone who's been
+            through it and built a real brand on Amazon.
+          </p>
+        </div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(
+              auto-fit,
+              minmax(min(200px, 100%), 1fr)
+            );
+            gap: 16px;
+          "
+        >
+          <div
+            style="
+              background: var(--dark3);
+              border: 1px solid rgba(245, 166, 35, 0.15);
+              padding: 28px 24px;
+            "
+          >
+            <div style="font-size: 2rem; margin-bottom: 12px">📅</div>
+            <div
+              style="
+                font-family: &quot;Bebas Neue&quot;, sans-serif;
+                font-size: 1.1rem;
+                letter-spacing: 0.05em;
+                color: var(--white);
+                margin-bottom: 6px;
+              "
+            >
+              Weekly Calls
+            </div>
+            <div
+              style="font-size: 0.82rem; color: var(--muted); line-height: 1.6"
+            >
+              Live Zoom sessions every week — ask anything, get real answers
+            </div>
+          </div>
+          <div
+            style="
+              background: var(--dark3);
+              border: 1px solid rgba(245, 166, 35, 0.15);
+              padding: 28px 24px;
+            "
+          >
+            <div style="font-size: 2rem; margin-bottom: 12px">🎯</div>
+            <div
+              style="
+                font-family: &quot;Bebas Neue&quot;, sans-serif;
+                font-size: 1.1rem;
+                letter-spacing: 0.05em;
+                color: var(--white);
+                margin-bottom: 6px;
+              "
+            >
+              Direct Access
+            </div>
+            <div
+              style="font-size: 0.82rem; color: var(--muted); line-height: 1.6"
+            >
+              Talk directly to your instructor — not a support bot or a VA
+            </div>
+          </div>
+          <div
+            style="
+              background: var(--dark3);
+              border: 1px solid rgba(245, 166, 35, 0.15);
+              padding: 28px 24px;
+            "
+          >
+            <div style="font-size: 2rem; margin-bottom: 12px">🔴</div>
+            <div
+              style="
+                font-family: &quot;Bebas Neue&quot;, sans-serif;
+                font-size: 1.1rem;
+                letter-spacing: 0.05em;
+                color: var(--white);
+                margin-bottom: 6px;
+              "
+            >
+              Recorded Replays
+            </div>
+            <div
+              style="font-size: 0.82rem; color: var(--muted); line-height: 1.6"
+            >
+              Can't make it live? Every session is recorded and saved for you
+            </div>
+          </div>
+          <div
+            style="
+              background: var(--dark3);
+              border: 1px solid rgba(245, 166, 35, 0.15);
+              padding: 28px 24px;
+            "
+          >
+            <div style="font-size: 2rem; margin-bottom: 12px">🤝</div>
+            <div
+              style="
+                font-family: &quot;Bebas Neue&quot;, sans-serif;
+                font-size: 1.1rem;
+                letter-spacing: 0.05em;
+                color: var(--white);
+                margin-bottom: 6px;
+              "
+            >
+              Community
+            </div>
+            <div
+              style="font-size: 0.82rem; color: var(--muted); line-height: 1.6"
+            >
+              Surrounded by other students on the same journey via Discord &amp;
+              Telegram
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="module-card">
-      <div class="module-num">04</div>
-      <div class="module-body">
-        <div class="module-tag">Branding</div>
-        <h3>Branding &amp; Packaging</h3>
-        <p>Build a brand that stands out. We cover logo design, packaging strategy, sustainability considerations, and how to craft a brand story that connects with customers and sets you apart from generic competitors.</p>
+    <!-- PRICING -->
+    <section id="pricing">
+      <div class="section-label" style="justify-content: center">
+        Enrollment
       </div>
-    </div>
+      <h2>Simple, <span>Transparent Pricing.</span></h2>
+      <p class="section-intro" style="margin: 0 auto 48px; text-align: center">
+        Choose the plan that works for you. Both include full access to
+        everything inside FBA Unchained.
+      </p>
+      <div
+        style="
+          display: flex;
+          gap: 24px;
+          justify-content: center;
+          flex-wrap: wrap;
+          align-items: stretch;
+        "
+      >
+        <div
+          class="pricing-card"
+          style="
+            flex: 1;
+            min-width: 280px;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+          "
+        >
+          <div class="price-amount">
+            <sup>$</sup>50<span style="font-size: 1.8rem; color: var(--muted)"
+              >/mo</span
+            >
+          </div>
+          <p class="price-note">Billed monthly — cancel anytime</p>
+          <ul class="price-includes" style="flex: 1">
+            <li>All 11 course modules (video + written)</li>
+            <li>Downloadable worksheets &amp; templates</li>
+            <li>Product research spreadsheet</li>
+            <li>Supplier outreach email templates</li>
+            <li>Private student community (Discord &amp; Telegram)</li>
+            <li>Weekly live Zoom check-in calls</li>
+            <li>All future course updates included</li>
+            <li>Bonus: Private Label Launch Checklist</li>
+            <li>1-on-1 onboarding call with instructor</li>
+            <li style="opacity: 0.35; text-decoration: line-through">
+              Lifetime access to course material
+            </li>
+            <li style="opacity: 0.35; text-decoration: line-through">
+              Exclusive bonus modules
+            </li>
+            <li style="opacity: 0.35; text-decoration: line-through">
+              Zoom call recordings &amp; replays
+            </li>
+          </ul>
+          <a
+            href="https://buy.stripe.com/28E3cv2Fv6vfg66bMhe7m02"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary"
+            style="width: 100%; text-align: center; display: block"
+            >Start Monthly</a
+          >
+          <p class="guarantee">🔒 7-day money-back guarantee</p>
+        </div>
+        <div
+          class="pricing-card"
+          style="
+            flex: 1;
+            min-width: 280px;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+          "
+        >
+          <div class="pricing-badge">Best Value — 2 Months Free</div>
+          <div class="price-amount">
+            <sup>$</sup>500<span style="font-size: 1.8rem; color: var(--muted)"
+              >/yr</span
+            >
+          </div>
+          <p class="price-note">
+            <s style="color: var(--muted)">$600/yr</s> &nbsp;— you save $100
+          </p>
+          <ul class="price-includes">
+            <li>All 11 course modules (video + written)</li>
+            <li>Downloadable worksheets &amp; templates</li>
+            <li>Product research spreadsheet</li>
+            <li>Supplier outreach email templates</li>
+            <li>Private student community (Discord &amp; Telegram)</li>
+            <li>Weekly live Zoom check-in calls</li>
+            <li>All future course updates included</li>
+            <li>Bonus: Private Label Launch Checklist</li>
+            <li>1-on-1 onboarding call with instructor</li>
+            <li>
+              <span style="color: var(--gold); margin-right: 4px">★</span>
+              Lifetime access to all course material
+            </li>
+            <li>
+              <span style="color: var(--gold); margin-right: 4px">★</span>
+              Exclusive bonus modules (annual only)
+            </li>
+            <li>
+              <span style="color: var(--gold); margin-right: 4px">★</span> Zoom
+              call recordings &amp; replays
+            </li>
+          </ul>
+          <a
+            href="https://buy.stripe.com/3cI00j7ZP2eZaLM9E9e7m03"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary"
+            style="width: 100%; text-align: center; display: block"
+            >Get Annual Access</a
+          >
+          <p class="guarantee">🔒 7-day money-back guarantee</p>
+        </div>
+      </div>
+    </section>
 
-    <div class="module-card">
-      <div class="module-num">05</div>
-      <div class="module-body">
-        <div class="module-tag">Listing</div>
-        <h3>Product Listing Optimization</h3>
-        <p>Write keyword-rich titles, compelling bullet points, and detailed descriptions that convert. Learn Amazon SEO fundamentals and how to brief a photographer for product images that convert.</p>
+    <!-- STUDENT RESULTS -->
+    <section
+      id="results"
+      style="
+        background: var(--dark3);
+        border-top: 1px solid rgba(245, 166, 35, 0.1);
+        border-bottom: 1px solid rgba(245, 166, 35, 0.1);
+      "
+    >
+      <div class="section-label">Proof It Works</div>
+      <h2>Student <span>Wins &amp; Results</span></h2>
+      <p class="section-intro">
+        Real screenshots. Real dashboards. Real students who followed the FBA
+        Unchained system and built profitable private label brands.
+      </p>
+      <div
+        style="
+          display: grid;
+          grid-template-columns: repeat(
+            auto-fit,
+            minmax(min(180px, 100%), 1fr)
+          );
+          gap: 1px;
+          background: rgba(245, 166, 35, 0.1);
+          border: 1px solid rgba(245, 166, 35, 0.1);
+          margin-bottom: 64px;
+        "
+      >
+        <div
+          style="
+            background: var(--dark3);
+            padding: 40px 32px;
+            text-align: center;
+          "
+        >
+          <div
+            style="
+              font-family: &quot;Bebas Neue&quot;, sans-serif;
+              font-size: 3.2rem;
+              color: var(--gold);
+              line-height: 1;
+            "
+          >
+            $<span class="results-count" data-target="400" data-suffix="K+"
+              >0</span
+            >
+          </div>
+          <div
+            style="
+              font-size: 0.78rem;
+              color: var(--muted);
+              letter-spacing: 0.1em;
+              text-transform: uppercase;
+              margin-top: 6px;
+            "
+          >
+            Total Student Revenue
+          </div>
+        </div>
+        <div
+          style="
+            background: var(--dark3);
+            padding: 40px 32px;
+            text-align: center;
+          "
+        >
+          <div
+            style="
+              font-family: &quot;Bebas Neue&quot;, sans-serif;
+              font-size: 3.2rem;
+              color: var(--gold);
+              line-height: 1;
+            "
+          >
+            $<span class="results-count" data-target="33" data-suffix="K+"
+              >0</span
+            >
+          </div>
+          <div
+            style="
+              font-size: 0.78rem;
+              color: var(--muted);
+              letter-spacing: 0.1em;
+              text-transform: uppercase;
+              margin-top: 6px;
+            "
+          >
+            Best Single Week
+          </div>
+        </div>
+        <div
+          style="
+            background: var(--dark3);
+            padding: 40px 32px;
+            text-align: center;
+          "
+        >
+          <div
+            style="
+              font-family: &quot;Bebas Neue&quot;, sans-serif;
+              font-size: 3.2rem;
+              color: var(--gold);
+              line-height: 1;
+            "
+          >
+            <span class="results-count" data-target="150" data-suffix="+"
+              >0</span
+            >
+          </div>
+          <div
+            style="
+              font-size: 0.78rem;
+              color: var(--muted);
+              letter-spacing: 0.1em;
+              text-transform: uppercase;
+              margin-top: 6px;
+            "
+          >
+            Students Enrolled
+          </div>
+        </div>
+        <div
+          style="
+            background: var(--dark3);
+            padding: 40px 32px;
+            text-align: center;
+          "
+        >
+          <div
+            style="
+              font-family: &quot;Bebas Neue&quot;, sans-serif;
+              font-size: 3.2rem;
+              color: var(--gold);
+              line-height: 1;
+            "
+          >
+            <span class="results-count" data-target="545" data-suffix="%"
+              >0</span
+            >
+          </div>
+          <div
+            style="
+              font-size: 0.78rem;
+              color: var(--muted);
+              letter-spacing: 0.1em;
+              text-transform: uppercase;
+              margin-top: 6px;
+            "
+          >
+            Best Month-over-Month Growth
+          </div>
+        </div>
       </div>
-    </div>
+      <div
+        style="
+          display: grid;
+          grid-template-columns: repeat(
+            auto-fill,
+            minmax(min(280px, 100%), 1fr)
+          );
+          gap: 16px;
+        "
+      >
+        <div
+          style="
+            background: var(--dark2);
+            border: 1px solid rgba(245, 166, 35, 0.1);
+            overflow: hidden;
+            border-radius: 2px;
+          "
+        >
+          <img
+            src="assets/images/Cam.webp"
+            alt="Cam sold $33.8k in 7 days"
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+              display: block;
+            "
+          />
+        </div>
+        <div
+          style="
+            background: var(--dark2);
+            border: 1px solid rgba(245, 166, 35, 0.1);
+            overflow: hidden;
+            border-radius: 2px;
+          "
+        >
+          <img
+            src="assets/images/IMG_0782.webp"
+            alt="Student $270K month"
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+              display: block;
+            "
+          />
+        </div>
+        <div
+          style="
+            background: var(--dark2);
+            border: 1px solid rgba(245, 166, 35, 0.1);
+            overflow: hidden;
+            border-radius: 2px;
+          "
+        >
+          <img
+            src="assets/images/62k.webp"
+            alt="$62K in 30 days"
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+              display: block;
+            "
+          />
+        </div>
+        <div
+          style="
+            background: var(--dark2);
+            border: 1px solid rgba(245, 166, 35, 0.1);
+            overflow: hidden;
+            border-radius: 2px;
+          "
+        >
+          <img
+            src="assets/images/Aaron.webp"
+            alt="Aaron sold $7.5k in 30 days"
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+              display: block;
+            "
+          />
+        </div>
+        <div
+          style="
+            background: var(--dark2);
+            border: 1px solid rgba(245, 166, 35, 0.1);
+            overflow: hidden;
+            border-radius: 2px;
+          "
+        >
+          <img
+            src="assets/images/Brandon.webp"
+            alt="Brandon sold $5.3k in 30 days"
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+              display: block;
+            "
+          />
+        </div>
+        <div
+          style="
+            background: var(--dark2);
+            border: 1px solid rgba(245, 166, 35, 0.1);
+            overflow: hidden;
+            border-radius: 2px;
+          "
+        >
+          <img
+            src="assets/images/IMG_1314.webp"
+            alt="Student $13.6K month +325%"
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+              display: block;
+            "
+          />
+        </div>
+      </div>
+    </section>
 
-    <div class="module-card">
-      <div class="module-num">06</div>
-      <div class="module-body">
-        <div class="module-tag">Reviews</div>
-        <h3>Getting Your First Reviews</h3>
-        <p>Understand how Amazon's Early Reviewer Program and Vine work, and how to ethically build your review base early. We cover what's allowed, what gets accounts banned, and the right way to generate social proof from day one.</p>
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+      <div class="section-label">Student Results</div>
+      <h2>Real People. <span>Real Results.</span></h2>
+      <p class="section-intro">
+        These aren't cherry-picked outliers. They're students who followed the
+        system and put in the work.
+      </p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Made my first $5,000 in revenue using this system. The product
+            research module alone was worth 10x the price of the course."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👤</div>
+            <div>
+              <div class="author-name">Hamza S.</div>
+              <div class="author-detail">$5,000 first month</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">
+            "I had zero experience before this course. Within 3 months I had my
+            first product live and profitable. The step-by-step format made it
+            impossible to get lost."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👤</div>
+            <div>
+              <div class="author-name">Adam O.</div>
+              <div class="author-detail">First product live in 90 days</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">
+            "The supplier negotiation scripts saved me hundreds of dollars on my
+            first order. I've already recommended this course to three friends."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👤</div>
+            <div>
+              <div class="author-name">Cameron Q.</div>
+              <div class="author-detail">Saved $400 on first order</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">
+            "I was skeptical at first but within my first 30 days I had a
+            product live and making sales. The step-by-step approach made
+            everything feel manageable."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👤</div>
+            <div>
+              <div class="author-name">Brandon R.</div>
+              <div class="author-detail">First product live in 30 days</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">
+            "The weekly Zoom calls alone are worth the price. Being able to ask
+            questions live and get real answers from someone actively selling on
+            Amazon is invaluable."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👤</div>
+            <div>
+              <div class="author-name">Michael Q.</div>
+              <div class="author-detail">Active FBA seller</div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="module-card">
-      <div class="module-num">07</div>
-      <div class="module-body">
-        <div class="module-tag">Launch</div>
-        <h3>Launch Strategy</h3>
-        <p>Execute a launch that gets traction fast. Learn how to run Amazon PPC campaigns from scratch, structure limited-time promotions, and use early advertising spend to climb the rankings and build organic momentum.</p>
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="section-label">Common Questions</div>
+      <h2>Got <span>Questions?</span></h2>
+      <p class="section-intro">Everything you need to know before enrolling.</p>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Is this course beginner friendly?<span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Yes, this course assumes zero prior knowledge. We start with the
+            fundamentals of how Amazon private label works and build up from
+            there. Every concept is explained clearly with real examples.
+          </p>
+        </div>
       </div>
-    </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How long is the course and how is it delivered?<span class="faq-icon"
+            >+</span
+          >
+        </button>
+        <div class="faq-answer">
+          <p>
+            The course contains 30+ hours of video content across 11 modules,
+            plus written summaries and downloadable resources. You get lifetime
+            access and can progress at your own pace. There's no deadline.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How much money do I need to start selling on Amazon?<span
+            class="faq-icon"
+            >+</span
+          >
+        </button>
+        <div class="faq-answer">
+          <p>
+            Most students start with $1,000–$2,000 for their first product
+            order, though some have started with less. The course covers how to
+            calculate startup costs and how to minimize risk on your first
+            launch.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          What if I already have some Amazon experience?<span class="faq-icon"
+            >+</span
+          >
+        </button>
+        <div class="faq-answer">
+          <p>
+            The course is structured so you can skip ahead. Intermediate and
+            advanced students consistently report that the modules on PPC
+            advertising, listing optimization, and scaling provide significant
+            value on their own.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          What is your refund policy?<span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            We offer a full 7-day money-back guarantee. If you go through the
+            course and feel it wasn't worth your investment, simply email
+            <a href="mailto:hi@fbaunchained.com">hi@fbaunchained.com</a> within
+            7 days of purchase for a complete refund. No questions asked.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Do I get access to updates?<span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Yes. Amazon's platform changes constantly, and so does the course.
+            All future updates, new lessons, and added resources are included at
+            no extra cost with your one-time purchase.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <div class="module-card">
-      <div class="module-num">08</div>
-      <div class="module-body">
-        <div class="module-tag">Fulfillment</div>
-        <h3>Fulfillment by Amazon (FBA)</h3>
-        <p>Understand exactly how FBA works and how to prep your products to Amazon's guidelines. Learn how to ship inventory to fulfillment centers (your supplier can handle this), and let Amazon take care of storage, packing, and delivery.</p>
+    <!-- NEWSLETTER -->
+    <section id="newsletter">
+      <div class="newsletter-inner">
+        <div class="section-label" style="justify-content: center">
+          Free Resource
+        </div>
+        <h2>Get the <span>Free Private Label Checklist</span></h2>
+        <p>
+          Not ready to enroll yet? Join the newsletter and get the free Private
+          Label Starter Checklist with the exact steps to take before launching
+          your first branded product on Amazon.
+        </p>
+        <form
+          class="newsletter-form"
+          action="https://assets.mailerlite.com/jsonp/2191058/forms/181948904518976582/subscribe"
+          method="post"
+          target="_blank"
+          id="ml-newsletter-form"
+        >
+          <input
+            type="email"
+            name="fields[email]"
+            placeholder="Enter your email address"
+            required
+            autocomplete="email"
+          />
+          <input type="hidden" name="ml-submit" value="1" />
+          <input type="hidden" name="anticsrf" value="true" />
+          <button type="submit">Send It Free</button>
+        </form>
+        <div
+          id="ml-success-msg"
+          style="
+            display: none;
+            color: var(--gold);
+            font-family: &quot;DM Mono&quot;, monospace;
+            font-size: 0.82rem;
+            letter-spacing: 0.08em;
+            margin-top: 12px;
+          "
+        >
+          ✓ You're in! Check your inbox for the checklist.
+        </div>
+        <div class="lead-magnet">
+          🎁 Includes: Private Label Checklist + Product Research Spreadsheet
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="module-card">
-      <div class="module-num">09</div>
-      <div class="module-body">
-        <div class="module-tag">Marketing</div>
-        <h3>Ongoing Marketing &amp; Promotion</h3>
-        <p>Scale beyond your launch. We cover email marketing to gather reviews and cross-sell products, Amazon Sponsored Ads strategy, and how to tap into external channels like social media and influencers to drive traffic to your listing.</p>
-      </div>
-    </div>
+    <!-- FINAL CTA -->
+    <section id="final-cta">
+      <div class="section-label" style="justify-content: center">Ready?</div>
+      <h2>Your First <span>Profitable Product</span><br />Starts Here</h2>
+      <p>
+        Join over 150 students who've already taken the leap. The only thing
+        standing between you and your own Amazon brand is the decision to start.
+      </p>
+      <a
+        href="https://buy.stripe.com/28E3cv2Fv6vfg66bMhe7m02"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-primary"
+        style="position: relative; z-index: 1"
+        >Enroll Now</a
+      >
+      <p
+        style="
+          color: var(--muted);
+          font-size: 0.8rem;
+          margin-top: 20px;
+          text-align: center;
+          position: relative;
+          z-index: 1;
+          max-width: none;
+        "
+      >
+        🔒 Secure checkout via Stripe &nbsp;·&nbsp; 7-day money-back guarantee
+        &nbsp;·&nbsp; Lifetime access&nbsp;(annual only)
+      </p>
+    </section>
 
-    <div class="module-card">
-      <div class="module-num">10</div>
-      <div class="module-body">
-        <div class="module-tag">Growth</div>
-        <h3>Monitor &amp; Adapt</h3>
-        <p>Turn your launch into a long-term business. Learn how to analyze customer reviews for product improvements, adjust pricing based on demand and competition, and continuously optimize your PPC campaigns based on real performance data.</p>
+    <!-- FOOTER -->
+    <footer
+      style="
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        text-align: center;
+        padding: 40px 48px;
+      "
+    >
+      <div class="footer-logo">
+        <span style="margin-right: 6px">⛓️‍💥</span>FBA Unchained
       </div>
-    </div>
-
-    <div class="module-card">
-      <div class="module-num">11</div>
-      <div class="module-body">
-        <div class="module-tag">Scaling</div>
-        <h3>Stand Out &amp; Scale</h3>
-        <p>Build a brand that competitors can't easily copy. We cover crafting a strong Unique Value Proposition, focusing on quality over quantity, diversifying your marketing channels beyond Amazon, and educating your buyers to create loyal long-term customers.</p>
+      <div style="display: flex; gap: 20px; align-items: center">
+        <a
+          href="https://discord.gg/R3ffs6FRgv"
+          title="Discord"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            text-decoration: none;
+            color: var(--muted);
+            font-size: 0.78rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: color 0.2s;
+          "
+          onmouseover="this.style.color = 'var(--gold)'"
+          onmouseout="this.style.color = 'var(--muted)'"
+        >
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.033.055a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"
+            />
+          </svg>
+          Discord
+        </a>
+        <a
+          href="#"
+          title="Telegram"
+          style="
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            text-decoration: none;
+            color: var(--muted);
+            font-size: 0.78rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: color 0.2s;
+          "
+          onmouseover="this.style.color = 'var(--gold)'"
+          onmouseout="this.style.color = 'var(--muted)'"
+        >
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+            />
+          </svg>
+          Telegram
+        </a>
       </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ZOOM CALLOUT -->
-<section style="background:var(--dark); padding:80px 48px;">
-  <div style="max-width:900px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:48px; align-items:center;">
-    <div>
-      <div class="section-label">Live Support</div>
-      <h2>You're Not Doing <span>This Alone.</span></h2>
-      <p style="color:var(--muted); font-size:1.05rem; line-height:1.8; margin-bottom:28px;">Most courses dump a folder of videos on you and disappear. Not this one. Every week I host a <strong style="color:var(--text);">live Zoom call</strong> where you can ask me anything: product research, supplier issues, PPC problems, you name it.</p>
-      <p style="color:var(--muted); font-size:1.05rem; line-height:1.8;">Whether you're just getting started or you're stuck on something specific, you'll always have a direct line to someone who's been through it and built a real brand on Amazon.</p>
-    </div>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(200px,100%), 1fr)); gap:16px;">
-      <div style="background:var(--dark3); border:1px solid rgba(245,166,35,0.15); padding:28px 24px;">
-        <div style="font-size:2rem; margin-bottom:12px;">📅</div>
-        <div style="font-family:'Bebas Neue',sans-serif; font-size:1.1rem; letter-spacing:0.05em; color:var(--white); margin-bottom:6px;">Weekly Calls</div>
-        <div style="font-size:0.82rem; color:var(--muted); line-height:1.6;">Live Zoom sessions every week — ask anything, get real answers</div>
-      </div>
-      <div style="background:var(--dark3); border:1px solid rgba(245,166,35,0.15); padding:28px 24px;">
-        <div style="font-size:2rem; margin-bottom:12px;">🎯</div>
-        <div style="font-family:'Bebas Neue',sans-serif; font-size:1.1rem; letter-spacing:0.05em; color:var(--white); margin-bottom:6px;">Direct Access</div>
-        <div style="font-size:0.82rem; color:var(--muted); line-height:1.6;">Talk directly to your instructor — not a support bot or a VA</div>
-      </div>
-      <div style="background:var(--dark3); border:1px solid rgba(245,166,35,0.15); padding:28px 24px;">
-        <div style="font-size:2rem; margin-bottom:12px;">🔴</div>
-        <div style="font-family:'Bebas Neue',sans-serif; font-size:1.1rem; letter-spacing:0.05em; color:var(--white); margin-bottom:6px;">Recorded Replays</div>
-        <div style="font-size:0.82rem; color:var(--muted); line-height:1.6;">Can't make it live? Every session is recorded and saved for you</div>
-      </div>
-      <div style="background:var(--dark3); border:1px solid rgba(245,166,35,0.15); padding:28px 24px;">
-        <div style="font-size:2rem; margin-bottom:12px;">🤝</div>
-        <div style="font-family:'Bebas Neue',sans-serif; font-size:1.1rem; letter-spacing:0.05em; color:var(--white); margin-bottom:6px;">Community</div>
-        <div style="font-size:0.82rem; color:var(--muted); line-height:1.6;">Surrounded by other students on the same journey via Discord & Telegram</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PRICING -->
-<section id="pricing">
-  <div class="section-label" style="justify-content:center;">Enrollment</div>
-  <h2>Simple, <span>Transparent Pricing.</span></h2>
-  <p class="section-intro" style="margin:0 auto 48px; text-align:center;">Choose the plan that works for you. Both include full access to everything inside FBA Unchained.</p>
-  <div style="display:flex; gap:24px; justify-content:center; flex-wrap:wrap; align-items:stretch;">
-
-    <!-- MONTHLY -->
-    <div class="pricing-card" style="flex:1; min-width:280px; max-width:400px; display:flex; flex-direction:column;">
-      <div class="price-amount"><sup>$</sup>50<span style="font-size:1.8rem; color:var(--muted);">/mo</span></div>
-      <p class="price-note">Billed monthly — cancel anytime</p>
-      <ul class="price-includes" style="flex:1;">
-        <li>All 11 course modules (video + written)</li>
-        <li>Downloadable worksheets &amp; templates</li>
-        <li>Product research spreadsheet</li>
-        <li>Supplier outreach email templates</li>
-        <li>Private student community (Discord &amp; Telegram)</li>
-        <li>Weekly live Zoom check-in calls</li>
-        <li>All future course updates included</li>
-        <li>Bonus: Private Label Launch Checklist</li>
-        <li>1-on-1 onboarding call with instructor</li>
-        <li style="opacity:0.35; text-decoration:line-through;">Lifetime access to course material</li>
-        <li style="opacity:0.35; text-decoration:line-through;">Exclusive bonus modules</li>
-        <li style="opacity:0.35; text-decoration:line-through;">Zoom call recordings &amp; replays</li>
+      <ul class="footer-links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="refund.html">Refund Policy</a></li>
+        <li><a href="mailto:hi@fbaunchained.com">Contact</a></li>
       </ul>
-      <a href="https://buy.stripe.com/28E3cv2Fv6vfg66bMhe7m02" target="_blank" rel="noopener noreferrer" class="btn-primary" style="width:100%;text-align:center;display:block;">Start Monthly</a>
-      <p class="guarantee">🔒 7-day money-back guarantee</p>
-    </div>
+      <p>
+        <span id="copyright"></span> FBA Unchained, LLC. All rights reserved.
+      </p>
+      <script>
+        document.getElementById("copyright").textContent =
+          "© " + new Date().getFullYear();
+      </script>
+    </footer>
 
-    <!-- ANNUAL -->
-    <div class="pricing-card" style="flex:1; min-width:280px; max-width:400px; display:flex; flex-direction:column;">
-      <div class="pricing-badge">Best Value — 2 Months Free</div>
-      <div class="price-amount"><sup>$</sup>500<span style="font-size:1.8rem; color:var(--muted);">/yr</span></div>
-      <p class="price-note"><s style="color:var(--muted);">$600/yr</s> &nbsp;— you save $100</p>
-      <ul class="price-includes">
-        <li>All 11 course modules (video + written)</li>
-        <li>Downloadable worksheets &amp; templates</li>
-        <li>Product research spreadsheet</li>
-        <li>Supplier outreach email templates</li>
-        <li>Private student community (Discord &amp; Telegram)</li>
-        <li>Weekly live Zoom check-in calls</li>
-        <li>All future course updates included</li>
-        <li>Bonus: Private Label Launch Checklist</li>
-        <li>1-on-1 onboarding call with instructor</li>
-        <li><span style="color:var(--gold); margin-right:4px;">★</span> Lifetime access to all course material</li>
-        <li><span style="color:var(--gold); margin-right:4px;">★</span> Exclusive bonus modules (annual only)</li>
-        <li><span style="color:var(--gold); margin-right:4px;">★</span> Zoom call recordings &amp; replays</li>
-      </ul>
-      <a href="https://buy.stripe.com/6oUbJ1fsh2eZbPQ7w1e7m00" target="_blank" rel="noopener noreferrer" class="btn-primary" style="width:100%;text-align:center;display:block;">Get Annual Access</a>
-      <p class="guarantee">🔒 7-day money-back guarantee</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- STUDENT RESULTS -->
-<section id="results" style="background:var(--dark3); border-top:1px solid rgba(245,166,35,0.1); border-bottom:1px solid rgba(245,166,35,0.1);">
-  <div class="section-label">Proof It Works</div>
-  <h2>Student <span>Wins & Results</span></h2>
-  <p class="section-intro">Real screenshots. Real dashboards. Real students who followed the FBA Unchained system and built profitable private label brands.</p>
-
-  <!-- Big aggregate stats -->
-  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(180px,100%), 1fr)); gap:1px; background:rgba(245,166,35,0.1); border:1px solid rgba(245,166,35,0.1); margin-bottom:64px;">
-    <div style="background:var(--dark3); padding:40px 32px; text-align:center;">
-      <div style="font-family:'Bebas Neue',sans-serif; font-size:3.2rem; color:var(--gold); line-height:1;">$<span class="results-count" data-target="400" data-prefix="$" data-suffix="K+">0</span></div>
-      <div style="font-size:0.78rem; color:var(--muted); letter-spacing:0.1em; text-transform:uppercase; margin-top:6px;">Total Student Revenue</div>
-    </div>
-    <div style="background:var(--dark3); padding:40px 32px; text-align:center;">
-      <div style="font-family:'Bebas Neue',sans-serif; font-size:3.2rem; color:var(--gold); line-height:1;">$<span class="results-count" data-target="33" data-suffix="K+">0</span></div>
-      <div style="font-size:0.78rem; color:var(--muted); letter-spacing:0.1em; text-transform:uppercase; margin-top:6px;">Best Single Week</div>
-    </div>
-    <div style="background:var(--dark3); padding:40px 32px; text-align:center;">
-      <div style="font-family:'Bebas Neue',sans-serif; font-size:3.2rem; color:var(--gold); line-height:1;"><span class="results-count" data-target="150" data-suffix="+">0</span></div>
-      <div style="font-size:0.78rem; color:var(--muted); letter-spacing:0.1em; text-transform:uppercase; margin-top:6px;">Students Enrolled</div>
-    </div>
-    <div style="background:var(--dark3); padding:40px 32px; text-align:center;">
-      <div style="font-family:'Bebas Neue',sans-serif; font-size:3.2rem; color:var(--gold); line-height:1;"><span class="results-count" data-target="545" data-suffix="%">0</span></div>
-      <div style="font-size:0.78rem; color:var(--muted); letter-spacing:0.1em; text-transform:uppercase; margin-top:6px;">Best Month-over-Month Growth</div>
-    </div>
-  </div>
-
-  <!-- Screenshot grid -->
-  <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(min(280px,100%), 1fr)); gap:16px;">
-
-    <div style="background:var(--dark2); border:1px solid rgba(245,166,35,0.1); overflow:hidden; border-radius:2px; position:relative;">
-      <img src="assets/images/Cam.webp" alt="Cam sold $33.8k in 7 days" style="width:100%; height:100%; object-fit:contain; display:block;" />
-    </div>
-
-    <div style="background:var(--dark2); border:1px solid rgba(245,166,35,0.1); overflow:hidden; border-radius:2px; position:relative;">
-      <img src="assets/images/IMG_0782.webp" alt="Student $270K month" style="width:100%; height:100%; object-fit:contain; display:block;" />
-    </div>
-
-    <div style="background:var(--dark2); border:1px solid rgba(245,166,35,0.1); overflow:hidden; border-radius:2px; position:relative;">
-      <img src="assets/images/62k.webp" alt="$62K in 30 days" style="width:100%; height:100%; object-fit:contain; display:block;" />
-    </div>
-
-    <div style="background:var(--dark2); border:1px solid rgba(245,166,35,0.1); overflow:hidden; border-radius:2px; position:relative;">
-      <img src="assets/images/Aaron.webp" alt="Aaron sold $7.5k in 30 days" style="width:100%; height:100%; object-fit:contain; display:block;" />
-    </div>
-
-    <div style="background:var(--dark2); border:1px solid rgba(245,166,35,0.1); overflow:hidden; border-radius:2px; position:relative;">
-      <img src="assets/images/Brandon.webp" alt="Brandon sold $5.3k in 30 days" style="width:100%; height:100%; object-fit:contain; display:block;" />
-    </div>
-
-    <div style="background:var(--dark2); border:1px solid rgba(245,166,35,0.1); overflow:hidden; border-radius:2px; position:relative;">
-      <img src="assets/images/IMG_1314.webp" alt="Student $13.6K month +325%" style="width:100%; height:100%; object-fit:contain; display:block;" />
-    </div>
-
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section id="testimonials">
-  <div class="section-label">Student Results</div>
-  <h2>Real People. <span>Real Results.</span></h2>
-  <p class="section-intro">These aren't cherry-picked outliers. They're students who followed the system and put in the work.</p>
-  <div class="testimonials-grid">
-    <div class="testimonial-card">
-      <div class="testimonial-stars">★★★★★</div>
-      <p class="testimonial-text">"Made my first $5,000 in revenue using this system. The product research module alone was worth 10x the price of the course."</p>
-      <div class="testimonial-author">
-        <div class="author-avatar">👤</div>
-        <div>
-          <div class="author-name">Hamza S.</div>
-          <div class="author-detail">$5,000 first month</div>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial-card">
-      <div class="testimonial-stars">★★★★★</div>
-      <p class="testimonial-text">"I had zero experience before this course. Within 3 months I had my first product live and profitable. The step-by-step format made it impossible to get lost."</p>
-      <div class="testimonial-author">
-        <div class="author-avatar">👤</div>
-        <div>
-          <div class="author-name">Adam O.</div>
-          <div class="author-detail">First product live in 90 days</div>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial-card">
-      <div class="testimonial-stars">★★★★★</div>
-      <p class="testimonial-text">"The supplier negotiation scripts saved me hundreds of dollars on my first order. I've already recommended this course to three friends."</p>
-      <div class="testimonial-author">
-        <div class="author-avatar">👤</div>
-        <div>
-          <div class="author-name">Cameron Q.</div>
-          <div class="author-detail">Saved $400 on first order</div>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial-card">
-      <div class="testimonial-stars">★★★★★</div>
-      <p class="testimonial-text">"I was skeptical at first but within my first 30 days I had a product live and making sales. The step-by-step approach made everything feel manageable."</p>
-      <div class="testimonial-author">
-        <div class="author-avatar">👤</div>
-        <div>
-          <div class="author-name">Brandon R.</div>
-          <div class="author-detail">First product live in 30 days</div>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial-card">
-      <div class="testimonial-stars">★★★★★</div>
-      <p class="testimonial-text">"The weekly Zoom calls alone are worth the price. Being able to ask questions live and get real answers from someone actively selling on Amazon is invaluable."</p>
-      <div class="testimonial-author">
-        <div class="author-avatar">👤</div>
-        <div>
-          <div class="author-name">Michael Q.</div>
-          <div class="author-detail">Active FBA seller</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section id="faq">
-
-  <div class="section-label">Common Questions</div>
-  <h2>Got <span>Questions?</span></h2>
-  <p class="section-intro">Everything you need to know before enrolling.</p>
-
-  <div class="faq-item">
-    <button class="faq-question" onclick="toggleFaq(this)">
-      Is this course beginner friendly?
-      <span class="faq-icon">+</span>
-    </button>
-    <div class="faq-answer"><p>Yes, this course assumes zero prior knowledge. We start with the fundamentals of how Amazon private label works and build up from there. Every concept is explained clearly with real examples.</p></div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question" onclick="toggleFaq(this)">
-      How long is the course and how is it delivered?
-      <span class="faq-icon">+</span>
-    </button>
-    <div class="faq-answer"><p>The course contains 30+ hours of video content across 11 modules, plus written summaries and downloadable resources. You get lifetime access and can progress at your own pace. There's no deadline.</p></div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question" onclick="toggleFaq(this)">
-      How much money do I need to start selling on Amazon?
-      <span class="faq-icon">+</span>
-    </button>
-    <div class="faq-answer"><p>Most students start with $1,000–$2,000 for their first product order, though some have started with less. The course covers how to calculate startup costs and how to minimize risk on your first launch.</p></div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question" onclick="toggleFaq(this)">
-      What if I already have some Amazon experience?
-      <span class="faq-icon">+</span>
-    </button>
-    <div class="faq-answer"><p>The course is structured so you can skip ahead. Intermediate and advanced students consistently report that the modules on PPC advertising, listing optimization, and scaling provide significant value on their own.</p></div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question" onclick="toggleFaq(this)">
-      What is your refund policy?
-      <span class="faq-icon">+</span>
-    </button>
-    <div class="faq-answer"><p>We offer a full 7-day money-back guarantee. If you go through the course and feel it wasn't worth your investment, simply email <a href="mailto:hi@fbaunchained.com" style="color:var(--gold);">hi@fbaunchained.com</a> within 7 days of purchase for a complete refund. No questions asked.</p></div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question" onclick="toggleFaq(this)">
-      Do I get access to updates?
-      <span class="faq-icon">+</span>
-    </button>
-    <div class="faq-answer"><p>Yes. Amazon's platform changes constantly, and so does the course. All future updates, new lessons, and added resources are included at no extra cost with your one-time purchase.</p></div>
-  </div>
-</section>
-
-<!-- NEWSLETTER -->
-<section id="newsletter">
-  <div class="newsletter-inner">
-    <div class="section-label" style="justify-content:center;">Free Resource</div>
-    <h2>Get the <span>Free Private Label Checklist</span></h2>
-    <p>Not ready to enroll yet? Join the newsletter and get the free Private Label Starter Checklist with the exact steps to take before launching your first branded product on Amazon.</p>
-    <form class="newsletter-form" action="https://assets.mailerlite.com/jsonp/2191058/forms/181948904518976582/subscribe" method="post" target="_blank" id="ml-newsletter-form">
-      <input type="email" name="fields[email]" placeholder="Enter your email address" required autocomplete="email" />
-      <input type="hidden" name="ml-submit" value="1" />
-      <input type="hidden" name="anticsrf" value="true" />
-      <button type="submit">Send It Free</button>
-    </form>
-    <div id="ml-success-msg" style="display:none; color:var(--gold); font-family:'DM Mono',monospace; font-size:0.82rem; letter-spacing:0.08em; margin-top:12px;">✓ You're in! Check your inbox for the checklist.</div>
-    <div class="lead-magnet">🎁 Includes: Private Label Checklist + Product Research Spreadsheet</div>
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-<section id="final-cta">
-  <div class="section-label" style="justify-content:center;">Ready?</div>
-  <h2>Your First <span>Profitable Product</span><br>Starts Here</h2>
-  <p>Join over 150 students who've already taken the leap. The only thing standing between you and your own Amazon brand is the decision to start.</p>
-  <a href="https://buy.stripe.com/28E3cv2Fv6vfg66bMhe7m02" target="_blank" rel="noopener noreferrer" class="btn-primary" style="position:relative; z-index:1;">Enroll Now</a>
-  <p style="color:var(--muted);font-size:0.8rem;margin-top:20px;white-space:nowrap;display:block;text-align:center;position:relative;z-index:1;max-width:none;">🔒 Secure checkout via Stripe &nbsp;·&nbsp; 7-day money-back guarantee &nbsp;·&nbsp; Lifetime access (annual only)</p>
-</section>
-
-<!-- FOOTER -->
-<footer style="flex-direction:column; align-items:center; gap:16px; text-align:center; padding:40px 48px;">
-  <div class="footer-logo"><span style="margin-right:6px;">⛓️‍💥</span>FBA Unchained</div>
-  <div style="display:flex; gap:20px; align-items:center;">
-    <a href="https://discord.gg/R3ffs6FRgv" title="Discord" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:7px; text-decoration:none; color:var(--muted); font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--muted)'">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.033.055a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
-      Discord
-    </a>
-    <a href="#" title="Telegram" style="display:inline-flex; align-items:center; gap:7px; text-decoration:none; color:var(--muted); font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--muted)'">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-      Telegram
-    </a>
-  </div>
-  <ul class="footer-links">
-    <li><a href="privacy.html">Privacy Policy</a></li>
-    <li><a href="terms.html">Terms</a></li>
-    <li><a href="refund.html">Refund Policy</a></li>
-    <li><a href="mailto:hi@fbaunchained.com">Contact</a></li>
-  </ul>
-  <p><span id="copyright"></span> FBA Unchained. All rights reserved.</p>
-  <script>document.getElementById("copyright").textContent = "© " + new Date().getFullYear();</script>
-</footer>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-
-  document.getElementById("copyright").textContent = "© " + new Date().getFullYear();
-
-  // Count-up animation
-  function countUp(el, target, duration, suffix) {
-    let start = 0;
-    const step = target / (duration / 16);
-    const timer = setInterval(() => {
-      start += step;
-      if (start >= target) {
-        el.textContent = target + (suffix || '+');
-        clearInterval(timer);
-      } else {
-        el.textContent = Math.floor(start);
-      }
-    }, 16);
-  }
-
-  // Count-up for results section stats
-  const resultCountEls = document.querySelectorAll('.results-count');
-  const resultsObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const el = entry.target;
-        const target = parseInt(el.dataset.target);
-        const suffix = el.dataset.suffix || '';
+    <script>
+      // Count-up: works for elements already on screen AND on scroll
+      function animateCount(el, target, suffix) {
         let start = 0;
-        const duration = 1800;
-        const step = target / (duration / 16);
+        const step = target / (1600 / 16);
         const timer = setInterval(() => {
           start += step;
           if (start >= target) {
@@ -1433,67 +2266,87 @@
             el.textContent = Math.floor(start) + suffix;
           }
         }, 16);
-        resultsObserver.unobserve(el);
       }
-    });
-  }, { threshold: 0.1 });
-  resultCountEls.forEach(el => resultsObserver.observe(el));
 
-  // Students enrolled count-up
-  const statEl = document.getElementById('students-count');
-  if (statEl) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          countUp(statEl, 150, 1500, '+');
-          observer.disconnect();
+      function setupCountUp(el, target, suffix) {
+        let fired = false;
+        function fire() {
+          if (fired) return;
+          fired = true;
+          animateCount(el, target, suffix);
         }
+        const obs = new IntersectionObserver(
+          (entries) => {
+            if (entries[0].isIntersecting) {
+              fire();
+              obs.disconnect();
+            }
+          },
+          { threshold: 0 },
+        );
+        obs.observe(el);
+        // Fallback: fire if already visible after fonts/images load
+        window.addEventListener("load", () =>
+          setTimeout(() => {
+            const r = el.getBoundingClientRect();
+            if (r.top < window.innerHeight && r.bottom > 0) fire();
+          }, 200),
+        );
+      }
+
+      // Hero students
+      const statEl = document.getElementById("students-count");
+      if (statEl) setupCountUp(statEl, 150, "+");
+
+      // Results stats
+      document.querySelectorAll(".results-count").forEach((el) => {
+        setupCountUp(el, parseInt(el.dataset.target), el.dataset.suffix || "");
       });
-    }, { threshold: 0.1 });
-    observer.observe(statEl);
-  }
 
-  // MailerLite newsletter form
-  document.getElementById('ml-newsletter-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const form = this;
-    const data = new FormData(form);
-    fetch(form.action, {
-      method: 'POST',
-      body: data,
-      mode: 'no-cors'
-    }).then(() => {
-      form.style.display = 'none';
-      document.getElementById('ml-success-msg').style.display = 'block';
-    }).catch(() => {
-      form.style.display = 'none';
-      document.getElementById('ml-success-msg').style.display = 'block';
-    });
-  });
+      // Newsletter form
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("ml-newsletter-form")
+          .addEventListener("submit", function (e) {
+            e.preventDefault();
+            const form = this;
+            fetch(form.action, {
+              method: "POST",
+              body: new FormData(form),
+              mode: "no-cors",
+            })
+              .then(() => {
+                form.style.display = "none";
+                document.getElementById("ml-success-msg").style.display =
+                  "block";
+              })
+              .catch(() => {
+                form.style.display = "none";
+                document.getElementById("ml-success-msg").style.display =
+                  "block";
+              });
+          });
+        document.querySelectorAll(".nav-links a").forEach((link) => {
+          link.addEventListener("click", () => {
+            document.getElementById("hamburger").classList.remove("open");
+            document.getElementById("nav-links").classList.remove("open");
+          });
+        });
+      });
 
-  // Close nav when a link is clicked
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      document.getElementById('hamburger').classList.remove('open');
-      document.getElementById('nav-links').classList.remove('open');
-    });
-  });
-  }); // DOMContentLoaded
+      function toggleFaq(btn) {
+        const item = btn.parentElement;
+        const isOpen = item.classList.contains("open");
+        document
+          .querySelectorAll(".faq-item")
+          .forEach((el) => el.classList.remove("open"));
+        if (!isOpen) item.classList.add("open");
+      }
 
-// Global functions (must be outside DOMContentLoaded for onclick to work)
-function toggleFaq(btn) {
-  const item = btn.parentElement;
-  const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
-  if (!isOpen) item.classList.add('open');
-}
-
-function toggleNav() {
-  const btn = document.getElementById('hamburger');
-  const links = document.getElementById('nav-links');
-  btn.classList.toggle('open');
-  links.classList.toggle('open');
-}
-</script>
-</body>
+      function toggleNav() {
+        document.getElementById("hamburger").classList.toggle("open");
+        document.getElementById("nav-links").classList.toggle("open");
+      }
+    </script>
+  </body>
 </html>
