@@ -867,6 +867,11 @@
           margin: 8px 24px 0;
           display: block;
         }
+        .nav-login {
+          margin: 4px 24px 0;
+          display: block;
+          text-align: center;
+        }
         .hamburger {
           display: flex;
         }
@@ -1052,6 +1057,9 @@
         <li><a href="#about">About</a></li>
         <li><a href="#testimonials">Results</a></li>
         <li><a href="#faq">FAQ</a></li>
+        <li>
+          <a href="auth/login.html" class="nav-login">Student Login</a>
+        </li>
         <li>
           <a
             href="https://buy.stripe.com/28E3cv2Fv6vfg66bMhe7m02"
@@ -2072,7 +2080,7 @@
           <p>
             We offer a full 7-day money-back guarantee. If you go through the
             course and feel it wasn't worth your investment, simply email
-            <a href="mailto:hi@fbaunchained.com">hi@fbaunchained.com</a> within
+            <a href="/cdn-cgi/l/email-protection#90f8f9d0f6f2f1e5fef3f8f1f9fef5f4bef3fffd"><span class="__cf_email__" data-cfemail="acc4c5eccacecdd9c2cfc4cdc5c2c9c882cfc3c1">[email&#160;protected]</span></a> within
             7 days of purchase for a complete refund. No questions asked.
           </p>
         </div>
@@ -2241,12 +2249,12 @@
         <li><a href="privacy.html">Privacy Policy</a></li>
         <li><a href="terms.html">Terms</a></li>
         <li><a href="refund.html">Refund Policy</a></li>
-        <li><a href="mailto:hi@fbaunchained.com">Contact</a></li>
+        <li><a href="/cdn-cgi/l/email-protection#137b7a53757172667d707b727a7d76773d707c7e">Contact</a></li>
       </ul>
       <p>
         <span id="copyright"></span> FBA Unchained, LLC. All rights reserved.
       </p>
-      <script>
+      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         document.getElementById("copyright").textContent =
           "© " + new Date().getFullYear();
       </script>
@@ -2339,14 +2347,4 @@
         const isOpen = item.classList.contains("open");
         document
           .querySelectorAll(".faq-item")
-          .forEach((el) => el.classList.remove("open"));
-        if (!isOpen) item.classList.add("open");
-      }
-
-      function toggleNav() {
-        document.getElementById("hamburger").classList.toggle("open");
-        document.getElementById("nav-links").classList.toggle("open");
-      }
-    </script>
-  </body>
-</html>
+          .forEach((el) => el.classList.r
