@@ -118,9 +118,13 @@
         transition: color 0.2s;
       }
       @media (hover: hover) {
-        .nav-links a:hover { color: var(--gold); }
+        .nav-links a:hover {
+          color: var(--gold);
+        }
       }
-      .nav-links a:active { color: var(--gold); }
+      .nav-links a:active {
+        color: var(--gold);
+      }
       .nav-cta {
         background: var(--gold);
         color: var(--dark) !important;
@@ -129,9 +133,15 @@
         border-radius: 2px;
       }
       @media (hover: hover) {
-        .nav-cta:hover { background: var(--gold-light) !important; color: var(--dark) !important; }
+        .nav-cta:hover {
+          background: var(--gold-light) !important;
+          color: var(--dark) !important;
+        }
       }
-      .nav-cta:active { background: var(--gold-light) !important; color: var(--dark) !important; }
+      .nav-cta:active {
+        background: var(--gold-light) !important;
+        color: var(--dark) !important;
+      }
 
       #hero {
         min-height: 100vh;
@@ -236,9 +246,14 @@
         cursor: pointer;
       }
       @media (hover: hover) {
-        .btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+        .btn-primary:hover {
+          background: var(--gold-light);
+          transform: translateY(-1px);
+        }
       }
-      .btn-primary:active { background: var(--gold-light); }
+      .btn-primary:active {
+        background: var(--gold-light);
+      }
       .btn-ghost {
         display: inline-block;
         color: var(--text);
@@ -252,9 +267,15 @@
           border-color 0.2s;
       }
       @media (hover: hover) {
-        .btn-ghost:hover { color: var(--gold); border-color: var(--gold); }
+        .btn-ghost:hover {
+          color: var(--gold);
+          border-color: var(--gold);
+        }
       }
-      .btn-ghost:active { color: var(--gold); border-color: var(--gold); }
+      .btn-ghost:active {
+        color: var(--gold);
+        border-color: var(--gold);
+      }
       .hero-stats {
         display: flex;
         gap: 48px;
@@ -2082,8 +2103,15 @@
           <p>
             We offer a full 7-day money-back guarantee. If you go through the
             course and feel it wasn't worth your investment, simply email
-            <a href="/cdn-cgi/l/email-protection#90f8f9d0f6f2f1e5fef3f8f1f9fef5f4bef3fffd"><span class="__cf_email__" data-cfemail="acc4c5eccacecdd9c2cfc4cdc5c2c9c882cfc3c1">[email&#160;protected]</span></a> within
-            7 days of purchase for a complete refund. No questions asked.
+            <a
+              href="/cdn-cgi/l/email-protection#90f8f9d0f6f2f1e5fef3f8f1f9fef5f4bef3fffd"
+              ><span
+                class="__cf_email__"
+                data-cfemail="acc4c5eccacecdd9c2cfc4cdc5c2c9c882cfc3c1"
+                >[email&#160;protected]</span
+              ></a
+            >
+            within 7 days of purchase for a complete refund. No questions asked.
           </p>
         </div>
       </div>
@@ -2251,12 +2279,21 @@
         <li><a href="privacy.html">Privacy Policy</a></li>
         <li><a href="terms.html">Terms</a></li>
         <li><a href="refund.html">Refund Policy</a></li>
-        <li><a href="/cdn-cgi/l/email-protection#137b7a53757172667d707b727a7d76773d707c7e">Contact</a></li>
+        <li>
+          <a
+            href="/cdn-cgi/l/email-protection#137b7a53757172667d707b727a7d76773d707c7e"
+            >Contact</a
+          >
+        </li>
       </ul>
       <p>
         <span id="copyright"></span> FBA Unchained, LLC. All rights reserved.
       </p>
-      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+      <script
+        data-cfasync="false"
+        src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ></script>
+      <script>
         document.getElementById("copyright").textContent =
           "© " + new Date().getFullYear();
       </script>
@@ -2287,13 +2324,16 @@
         }
         const obs = new IntersectionObserver(
           (entries) => {
-            if (entries[0].isIntersecting) { fire(); obs.disconnect(); }
+            if (entries[0].isIntersecting) {
+              fire();
+              obs.disconnect();
+            }
           },
-          { threshold: 0 }
+          { threshold: 0 },
         );
         obs.observe(el);
         // Fire immediately if already in viewport (script runs after DOM ready)
-        setTimeout(function() {
+        setTimeout(function () {
           var r = el.getBoundingClientRect();
           if (r.top < window.innerHeight && r.bottom > 0) fire();
         }, 300);
