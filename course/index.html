@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
 <title>Course – FBA Unchained</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛓️‍💥</text></svg>" />
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
@@ -103,7 +106,7 @@
   .callout p { font-size: 0.88rem; color: var(--muted); line-height: 1.75; }
 
   @media (max-width: 768px) {
-    .sidebar { position: fixed; left: 0; top: 60px; height: calc(100vh - 60px); z-index: 50; transition: transform 0.3s ease; transform: translateX(-100%); }
+    .sidebar { position: fixed; left: 0; top: 60px; height: calc(100vh - 60px); z-index: 50; transition: transform 0.3s ease; transform: translateX(-100%); overflow-y: auto; -webkit-overflow-scrolling: touch; }
     .sidebar.open { transform: translateX(0); }
     .sidebar-overlay.show { display: block; }
     .main { padding: 32px 20px; }
@@ -222,6 +225,22 @@
       document.getElementById('app').style.display = 'flex';
       document.getElementById('user-email').textContent = user.email;
       showModule(1);
+    }
+  });
+
+  // Re-check auth whenever the page becomes visible again (back button, tab switch)
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+      const user = auth.currentUser;
+      if (!user) window.location.href = '../auth/login.html';
+    }
+  });
+
+  // Also catch back button via pageshow event (bfcache)
+  window.addEventListener('pageshow', (e) => {
+    if (e.persisted) {
+      const user = auth.currentUser;
+      if (!user) window.location.href = '../auth/login.html';
     }
   });
 
