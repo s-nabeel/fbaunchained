@@ -1,1015 +1,377 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Private Label Cheatsheet – FBA Unchained</title>
-    <meta
-      name="description"
-      content="The FBA Unchained Private Label Cheatsheet. Everything you need to launch your first Amazon private label product, condensed into one page."
-    />
-    <link rel="canonical" href="https://fbaunchained.com/cheatsheet" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛓️‍💥</text></svg>"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700&family=DM+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      :root {
-        --gold: #f5a623;
-        --gold-light: #ffd280;
-        --dark: #0a0a0a;
-        --dark2: #111111;
-        --dark3: #1a1a1a;
-        --dark4: #222222;
-        --text: #e8e2d6;
-        --muted: #888880;
-        --white: #faf8f4;
-      }
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      html {
-        scroll-behavior: smooth;
-        scroll-padding-top: 72px;
-      }
-      body {
-        background: var(--dark);
-        color: var(--text);
-        font-family: "DM Sans", sans-serif;
-        font-weight: 300;
-        line-height: 1.6;
-        overflow-x: hidden;
-      }
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Private Label Cheatsheet – FBA Unchained</title>
+<meta name="description" content="The FBA Unchained Private Label Cheatsheet. Everything you need to launch your first Amazon private label product, condensed into one page." />
+<link rel="canonical" href="https://fbaunchained.com/cheatsheet" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛓️‍💥</text></svg>" />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --gold: #F5A623; --gold-light: #FFD280; --dark: #0A0A0A; --dark2: #111111;
+    --dark3: #1A1A1A; --dark4: #222222; --text: #E8E2D6; --muted: #888880; --white: #FAF8F4;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+  body { background: var(--dark); color: var(--text); font-family: 'DM Sans', sans-serif; font-weight: 300; line-height: 1.6; overflow-x: hidden; }
 
-      /* NAV */
-      nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 100;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 18px 48px;
-        background: rgba(10, 10, 10, 0.92);
-        backdrop-filter: blur(12px);
-        border-bottom: 1px solid rgba(245, 166, 35, 0.15);
-      }
-      .nav-logo {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 1.5rem;
-        letter-spacing: 0.12em;
-        color: var(--gold);
-        text-decoration: none;
-      }
-      .nav-right {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-      }
-      .nav-back {
-        color: var(--muted);
-        text-decoration: none;
-        font-size: 0.8rem;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        font-family: "DM Mono", monospace;
-        transition: color 0.2s;
-      }
-      @media (hover: hover) {
-        .nav-back:hover {
-          color: var(--gold);
-        }
-      }
-      .btn-primary {
-        display: inline-block;
-        background: var(--gold);
-        color: var(--dark);
-        text-decoration: none;
-        font-weight: 700;
-        font-size: 0.85rem;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        padding: 10px 22px;
-        border-radius: 2px;
-        transition: background 0.2s;
-      }
-      @media (hover: hover) {
-        .btn-primary:hover {
-          background: var(--gold-light);
-        }
-      }
-      .btn-primary:active {
-        background: var(--gold-light);
-      }
+  /* NAV */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 18px 48px; background: rgba(10,10,10,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(245,166,35,0.15); }
+  .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 0.12em; color: var(--gold); text-decoration: none; }
+  .nav-right { display: flex; align-items: center; gap: 20px; }
+  .nav-back { color: var(--muted); text-decoration: none; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; font-family: 'DM Mono', monospace; transition: color 0.2s; }
+  @media (hover: hover) { .nav-back:hover { color: var(--gold); } }
+  .btn-primary { display: inline-block; background: var(--gold); color: var(--dark); text-decoration: none; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 10px 22px; border-radius: 2px; transition: background 0.2s; }
+  @media (hover: hover) { .btn-primary:hover { background: var(--gold-light); } }
+  .btn-primary:active { background: var(--gold-light); }
 
-      /* HERO */
-      .hero {
-        padding: 140px 48px 72px;
-        position: relative;
-        overflow: hidden;
-        border-bottom: 1px solid rgba(245, 166, 35, 0.1);
-      }
-      .hero-bg {
-        position: absolute;
-        inset: 0;
-        background:
-          radial-gradient(
-            ellipse 50% 60% at 80% 50%,
-            rgba(245, 166, 35, 0.07) 0%,
-            transparent 70%
-          ),
-          var(--dark);
-      }
-      .hero-grid {
-        position: absolute;
-        inset: 0;
-        background-image:
-          linear-gradient(rgba(245, 166, 35, 0.03) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(245, 166, 35, 0.03) 1px, transparent 1px);
-        background-size: 60px 60px;
-        mask-image: radial-gradient(
-          ellipse 80% 80% at 50% 50%,
-          black,
-          transparent
-        );
-      }
-      .hero-content {
-        position: relative;
-        z-index: 1;
-        max-width: 780px;
-      }
-      .hero-eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        font-family: "DM Mono", monospace;
-        font-size: 0.72rem;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: var(--gold);
-        margin-bottom: 24px;
-      }
-      .hero-eyebrow::before {
-        content: "";
-        display: block;
-        width: 28px;
-        height: 1px;
-        background: var(--gold);
-      }
-      .hero h1 {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: clamp(3rem, 7vw, 6rem);
-        line-height: 0.95;
-        letter-spacing: 0.02em;
-        color: var(--white);
-        margin-bottom: 20px;
-      }
-      .hero h1 span {
-        color: var(--gold);
-      }
-      .hero p {
-        font-size: 1.05rem;
-        color: var(--muted);
-        max-width: 500px;
-        line-height: 1.75;
-      }
+  /* HERO */
+  .hero { padding: 140px 48px 72px; position: relative; overflow: hidden; border-bottom: 1px solid rgba(245,166,35,0.1); }
+  .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 50% 60% at 80% 50%, rgba(245,166,35,0.07) 0%, transparent 70%), var(--dark); }
+  .hero-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(245,166,35,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(245,166,35,0.03) 1px, transparent 1px); background-size: 60px 60px; mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black, transparent); }
+  .hero-content { position: relative; z-index: 1; max-width: 780px; }
+  .hero-eyebrow { display: inline-flex; align-items: center; gap: 10px; font-family: 'DM Mono', monospace; font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; }
+  .hero-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: var(--gold); }
+  .hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3rem, 7vw, 6rem); line-height: 0.95; letter-spacing: 0.02em; color: var(--white); margin-bottom: 20px; }
+  .hero h1 span { color: var(--gold); }
+  .hero p { font-size: 1.05rem; color: var(--muted); max-width: 500px; line-height: 1.75; }
 
-      /* PRINT BAR */
-      .print-bar {
-        background: var(--dark3);
-        border-bottom: 1px solid rgba(245, 166, 35, 0.1);
-        padding: 14px 48px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 16px;
-        flex-wrap: wrap;
-      }
-      .print-bar p {
-        font-family: "DM Mono", monospace;
-        font-size: 0.72rem;
-        color: var(--muted);
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-      }
-      .btn-outline {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        border: 1px solid rgba(245, 166, 35, 0.35);
-        color: var(--gold);
-        padding: 8px 18px;
-        font-family: "DM Mono", monospace;
-        font-size: 0.72rem;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        cursor: pointer;
-        background: none;
-        transition: all 0.2s;
-      }
-      @media (hover: hover) {
-        .btn-outline:hover {
-          background: rgba(245, 166, 35, 0.08);
-          border-color: var(--gold);
-        }
-      }
-      .btn-outline:active {
-        background: rgba(245, 166, 35, 0.08);
-      }
+  /* PRINT BAR */
+  .print-bar { background: var(--dark3); border-bottom: 1px solid rgba(245,166,35,0.1); padding: 14px 48px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .print-bar p { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; }
+  .btn-outline { display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(245,166,35,0.35); color: var(--gold); padding: 8px 18px; font-family: 'DM Mono', monospace; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; background: none; transition: all 0.2s; }
+  @media (hover: hover) { .btn-outline:hover { background: rgba(245,166,35,0.08); border-color: var(--gold); } }
+  .btn-outline:active { background: rgba(245,166,35,0.08); }
 
-      /* CHEATSHEET */
-      .cheatsheet {
-        padding: 56px 48px;
-      }
-      .cs-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(min(360px, 100%), 1fr));
-        gap: 20px;
-      }
+  /* CHEATSHEET */
+  .cheatsheet { padding: 56px 48px; }
+  .cs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(360px, 100%), 1fr)); gap: 20px; }
 
-      /* CARDS */
-      .card {
-        background: var(--dark3);
-        border: 1px solid rgba(245, 166, 35, 0.12);
-        padding: 28px 26px;
-        position: relative;
-        transition: border-color 0.2s;
-      }
-      @media (hover: hover) {
-        .card:hover {
-          border-color: rgba(245, 166, 35, 0.3);
-        }
-      }
-      .card-num {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 3.5rem;
-        line-height: 1;
-        color: rgba(245, 166, 35, 0.1);
-        position: absolute;
-        top: 14px;
-        right: 18px;
-      }
-      .card-tag {
-        font-family: "DM Mono", monospace;
-        font-size: 0.63rem;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: var(--gold);
-        margin-bottom: 8px;
-      }
-      .card h2 {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 1.35rem;
-        letter-spacing: 0.04em;
-        color: var(--white);
-        margin-bottom: 18px;
-        line-height: 1.1;
-      }
-      .card-items {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 9px;
-      }
-      .card-items li {
-        position: relative;
-        padding-left: 18px;
-        font-size: 0.87rem;
-        color: var(--text);
-        line-height: 1.6;
-      }
-      .card-items li::before {
-        content: "✓";
-        color: var(--gold);
-        font-weight: 700;
-        position: absolute;
-        left: 0;
-        top: 0;
-        font-size: 0.78rem;
-      }
-      .card-items li strong {
-        color: var(--white);
-        font-weight: 500;
-      }
-      .card-tip {
-        margin-top: 14px;
-        background: rgba(245, 166, 35, 0.05);
-        border-left: 2px solid var(--gold);
-        padding: 10px 14px;
-        font-size: 0.78rem;
-        color: var(--muted);
-        line-height: 1.6;
-        font-style: italic;
-      }
-      .card-tip strong {
-        color: var(--gold);
-        font-style: normal;
-      }
+  /* CARDS */
+  .card { background: var(--dark3); border: 1px solid rgba(245,166,35,0.12); padding: 28px 26px; position: relative; transition: border-color 0.2s; }
+  @media (hover: hover) { .card:hover { border-color: rgba(245,166,35,0.3); } }
+  .card-num { font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; line-height: 1; color: rgba(245,166,35,0.1); position: absolute; top: 14px; right: 18px; }
+  .card-tag { font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+  .card h2 { font-family: 'Bebas Neue', sans-serif; font-size: 1.35rem; letter-spacing: 0.04em; color: var(--white); margin-bottom: 18px; line-height: 1.1; }
+  .card-items { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+  .card-items li { position: relative; padding-left: 18px; font-size: 0.87rem; color: var(--text); line-height: 1.6; }
+  .card-items li::before { content: '✓'; color: var(--gold); font-weight: 700; position: absolute; left: 0; top: 0; font-size: 0.78rem; }
+  .card-items li strong { color: var(--white); font-weight: 500; }
+  .card-tip { margin-top: 14px; background: rgba(245,166,35,0.05); border-left: 2px solid var(--gold); padding: 10px 14px; font-size: 0.78rem; color: var(--muted); line-height: 1.6; font-style: italic; }
+  .card-tip strong { color: var(--gold); font-style: normal; }
 
-      /* WIDE CARD */
-      .card-wide {
-        grid-column: 1 / -1;
-      }
-      .wide-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-        gap: 14px;
-        margin-top: 20px;
-      }
-      .wide-item {
-        background: var(--dark2);
-        border: 1px solid rgba(245, 166, 35, 0.08);
-        padding: 16px;
-      }
-      .wi-label {
-        font-family: "DM Mono", monospace;
-        font-size: 0.6rem;
-        letter-spacing: 0.15em;
-        text-transform: uppercase;
-        color: var(--muted);
-        margin-bottom: 6px;
-      }
-      .wi-value {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 1.6rem;
-        color: var(--gold);
-        line-height: 1;
-        margin-bottom: 4px;
-      }
-      .wi-desc {
-        font-size: 0.76rem;
-        color: var(--muted);
-        line-height: 1.5;
-      }
+  /* WIDE CARD */
+  .card-wide { grid-column: 1 / -1; }
+  .wide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 14px; margin-top: 20px; }
+  .wide-item { background: var(--dark2); border: 1px solid rgba(245,166,35,0.08); padding: 16px; }
+  .wi-label { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+  .wi-value { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; color: var(--gold); line-height: 1; margin-bottom: 4px; }
+  .wi-desc { font-size: 0.76rem; color: var(--muted); line-height: 1.5; }
 
-      /* CTA */
-      .cta-section {
-        text-align: center;
-        padding: 80px 48px;
-        border-top: 1px solid rgba(245, 166, 35, 0.1);
-        position: relative;
-        overflow: hidden;
-      }
-      .cta-section::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: radial-gradient(
-          ellipse 60% 60% at 50% 50%,
-          rgba(245, 166, 35, 0.05) 0%,
-          transparent 70%
-        );
-        pointer-events: none;
-      }
-      .section-label {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        font-family: "DM Mono", monospace;
-        font-size: 0.72rem;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: var(--gold);
-        margin-bottom: 20px;
-      }
-      .section-label::before {
-        content: "";
-        display: block;
-        width: 24px;
-        height: 1px;
-        background: var(--gold);
-      }
-      .cta-section h2 {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: clamp(2.4rem, 5vw, 4rem);
-        color: var(--white);
-        margin-bottom: 12px;
-      }
-      .cta-section h2 span {
-        color: var(--gold);
-      }
-      .cta-section p {
-        color: var(--muted);
-        font-size: 1rem;
-        max-width: 440px;
-        margin: 0 auto 36px;
-        line-height: 1.75;
-      }
-      .btn-lg {
-        display: inline-block;
-        background: var(--gold);
-        color: var(--dark);
-        text-decoration: none;
-        font-weight: 700;
-        font-size: 1rem;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        padding: 18px 44px;
-        border-radius: 2px;
-        transition: background 0.2s;
-      }
-      @media (hover: hover) {
-        .btn-lg:hover {
-          background: var(--gold-light);
-        }
-      }
-      .btn-lg:active {
-        background: var(--gold-light);
-      }
-      .cta-section .cta-note {
-        margin-top: 20px;
-        font-size: 0.8rem;
-        color: var(--muted);
-        font-family: "DM Sans", sans-serif;
-        font-weight: 300;
-        letter-spacing: 0;
-        max-width: none;
-      }
+  /* CTA */
+  .cta-section { text-align: center; padding: 80px 48px; border-top: 1px solid rgba(245,166,35,0.1); position: relative; overflow: hidden; }
+  .cta-section::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(245,166,35,0.05) 0%, transparent 70%); pointer-events: none; }
+  .section-label { display: inline-flex; align-items: center; gap: 10px; font-family: 'DM Mono', monospace; font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+  .section-label::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+  .cta-section h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.4rem, 5vw, 4rem); color: var(--white); margin-bottom: 12px; }
+  .cta-section h2 span { color: var(--gold); }
+  .cta-section p { color: var(--muted); font-size: 1rem; max-width: 440px; margin: 0 auto 36px; line-height: 1.75; }
+  .btn-lg { display: inline-block; background: var(--gold); color: var(--dark); text-decoration: none; font-weight: 700; font-size: 1rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 44px; border-radius: 2px; transition: background 0.2s; }
+  @media (hover: hover) { .btn-lg:hover { background: var(--gold-light); } }
+  .btn-lg:active { background: var(--gold-light); }
+  .cta-section .cta-note { margin-top: 20px; font-size: 0.8rem; color: var(--muted); font-family: 'DM Sans', sans-serif; font-weight: 300; letter-spacing: 0; max-width: none; }
 
-      /* FOOTER */
-      footer {
-        padding: 40px 48px;
-        border-top: 1px solid rgba(245, 166, 35, 0.1);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-        text-align: center;
-      }
-      .footer-logo {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 1.2rem;
-        letter-spacing: 0.12em;
-        color: var(--gold);
-      }
-      footer p {
-        font-size: 0.78rem;
-        color: var(--muted);
-        letter-spacing: 0.05em;
-      }
-      .footer-links {
-        display: flex;
-        gap: 16px 28px;
-        list-style: none;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      .footer-links a {
-        font-size: 0.78rem;
-        color: var(--muted);
-        text-decoration: none;
-        letter-spacing: 0.05em;
-        transition: color 0.2s;
-        white-space: nowrap;
-      }
-      @media (hover: hover) {
-        .footer-links a:hover {
-          color: var(--gold);
-        }
-      }
+  /* FOOTER */
+  footer { padding: 40px 48px; border-top: 1px solid rgba(245,166,35,0.1); display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center; }
+  .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.2rem; letter-spacing: 0.12em; color: var(--gold); }
+  footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
+  .footer-links { display: flex; gap: 16px 28px; list-style: none; flex-wrap: wrap; justify-content: center; }
+  .footer-links a { font-size: 0.78rem; color: var(--muted); text-decoration: none; letter-spacing: 0.05em; transition: color 0.2s; white-space: nowrap; }
+  @media (hover: hover) { .footer-links a:hover { color: var(--gold); } }
 
-      /* RESPONSIVE */
-      @media (max-width: 768px) {
-        nav {
-          padding: 16px 20px;
-        }
-        .hero {
-          padding: 110px 20px 56px;
-        }
-        .print-bar {
-          padding: 12px 20px;
-        }
-        .cheatsheet {
-          padding: 36px 16px;
-        }
-        .cta-section {
-          padding: 60px 20px;
-        }
-        footer {
-          padding: 40px 20px;
-        }
-      }
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    nav { padding: 14px 16px; }
+    .nav-logo { font-size: 1.15rem; }
+    .nav-back { display: none; }
+    .btn-primary { padding: 8px 14px; font-size: 0.78rem; }
+    .hero { padding: 110px 20px 56px; }
+    .print-bar { padding: 12px 16px; justify-content: flex-end; }
+    .print-bar p { display: none; }
+    .cheatsheet { padding: 36px 16px; }
+    .cta-section { padding: 60px 20px; }
+    footer { padding: 40px 20px; }
+  }
 
-      /* PRINT */
-      @media print {
-        nav,
-        .print-bar,
-        .cta-section,
-        footer {
-          display: none !important;
-        }
-        .hero {
-          padding: 24px;
-          border: none;
-        }
-        .hero-bg,
-        .hero-grid {
-          display: none;
-        }
-        body {
-          background: white;
-          color: black;
-        }
-        .card {
-          border: 1px solid #ccc;
-          background: white;
-          break-inside: avoid;
-        }
-        .card h2 {
-          color: black;
-        }
-        .card-tag {
-          color: #b8841a;
-        }
-        .card-items li {
-          color: #333;
-        }
-        .card-items li::before {
-          color: #b8841a;
-        }
-        .wi-value {
-          color: #b8841a;
-        }
-        .wi-label,
-        .wi-desc {
-          color: #666;
-        }
-        .wide-item {
-          border: 1px solid #ddd;
-          background: #fafafa;
-        }
-        .card-tip {
-          background: #fffbf0;
-          border-left-color: #b8841a;
-        }
-        .cheatsheet {
-          padding: 16px 24px;
-        }
-        .cs-grid {
-          gap: 12px;
-        }
-        .hero h1 {
-          color: black;
-          font-size: 3rem;
-        }
-        .hero p {
-          color: #555;
-        }
-        .hero-eyebrow {
-          color: #b8841a;
-        }
-      }
+  /* PRINT */
+  @media print {
+    nav, .print-bar, .cta-section, footer { display: none !important; }
+    .hero { padding: 24px; border: none; }
+    .hero-bg, .hero-grid { display: none; }
+    body { background: white; color: black; }
+    .card { border: 1px solid #ccc; background: white; break-inside: avoid; }
+    .card h2 { color: black; }
+    .card-tag { color: #b8841a; }
+    .card-items li { color: #333; }
+    .card-items li::before { color: #b8841a; }
+    .wi-value { color: #b8841a; }
+    .wi-label, .wi-desc { color: #666; }
+    .wide-item { border: 1px solid #ddd; background: #fafafa; }
+    .card-tip { background: #fffbf0; border-left-color: #b8841a; }
+    .cheatsheet { padding: 16px 24px; }
+    .cs-grid { gap: 12px; }
+    .hero h1 { color: black; font-size: 3rem; }
+    .hero p { color: #555; }
+    .hero-eyebrow { color: #b8841a; }
+  }
 
-      /* ANIMATIONS */
-      @keyframes fadeUp {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      .hero-content > * {
-        opacity: 0;
-        animation: fadeUp 0.6s ease forwards;
-      }
-      .hero-eyebrow {
-        animation-delay: 0.1s;
-      }
-      .hero h1 {
-        animation-delay: 0.2s;
-      }
-      .hero p {
-        animation-delay: 0.35s;
-      }
-    </style>
-  </head>
-  <body>
-    <nav>
-      <a href="index.html" class="nav-logo"
-        ><span style="font-size: 1.3rem; margin-right: 6px">⛓️‍💥</span>FBA
-        Unchained</a
-      >
-      <div class="nav-right">
-        <a href="index.html" class="nav-back">← Back to Home</a>
-        <a
-          href="https://buy.stripe.com/28E3cv2Fv6vfg66bMhe7m02"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn-primary"
-          >Enroll Now</a
-        >
+  /* ANIMATIONS */
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-content > * { opacity: 0; animation: fadeUp 0.6s ease forwards; }
+  .hero-eyebrow { animation-delay: 0.1s; }
+  .hero h1 { animation-delay: 0.2s; }
+  .hero p { animation-delay: 0.35s; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><span style="font-size:1.3rem; margin-right:6px;">⛓️‍💥</span>FBA Unchained</a>
+  <div class="nav-right">
+    <a href="index.html" class="nav-back">← Back to Home</a>
+    <a href="https://buy.stripe.com/28E3cv2Fv6vfg66bMhe7m02" target="_blank" rel="noopener noreferrer" class="btn-primary">Enroll Now</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Free Resource</div>
+    <h1>Private Label <span>Cheatsheet</span></h1>
+    <p>Everything you need to launch your first Amazon private label product, condensed into one page. Save it, print it, use it.</p>
+  </div>
+</div>
+
+<div class="print-bar">
+  <p>FBA Unchained &nbsp;·&nbsp; fbaunchained.com/cheatsheet</p>
+  <button class="btn-outline" onclick="window.print()">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+    Print / Save PDF
+  </button>
+</div>
+
+<div class="cheatsheet">
+
+  <!-- Key Numbers -->
+  <div class="card card-wide" style="margin-bottom:20px;">
+    <div class="card-tag">Key Numbers to Know Before You Start</div>
+    <h2>The Numbers That Drive Every Decision</h2>
+    <div class="wide-grid">
+      <div class="wide-item">
+        <div class="wi-label">Target Selling Price</div>
+        <div class="wi-value">$25–$65</div>
+        <div class="wi-desc">Sweet spot for healthy margins after FBA fees and cost of goods</div>
       </div>
-    </nav>
-
-    <div class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-grid"></div>
-      <div class="hero-content">
-        <div class="hero-eyebrow">Free Resource</div>
-        <h1>Private Label <span>Cheatsheet</span></h1>
-        <p>
-          Everything you need to launch your first Amazon private label product,
-          condensed into one page. Save it, print it, use it.
-        </p>
+      <div class="wide-item">
+        <div class="wi-label">Minimum Net Margin</div>
+        <div class="wi-value">30%+</div>
+        <div class="wi-desc">After FBA fees, product cost, and shipping. Non-negotiable</div>
+      </div>
+      <div class="wide-item">
+        <div class="wi-label">Monthly Sales (Niche)</div>
+        <div class="wi-value">3,000+</div>
+        <div class="wi-desc">Combined units across top 10 listings confirms real demand</div>
+      </div>
+      <div class="wide-item">
+        <div class="wi-label">Competitor Reviews</div>
+        <div class="wi-value">&lt;300</div>
+        <div class="wi-desc">Most top sellers should have under 300 reviews to enter competitively</div>
+      </div>
+      <div class="wide-item">
+        <div class="wi-label">First Order Size</div>
+        <div class="wi-value">200–300</div>
+        <div class="wi-desc">Units for your first order. Enough to test without over-committing capital</div>
+      </div>
+      <div class="wide-item">
+        <div class="wi-label">Launch Ad Budget</div>
+        <div class="wi-value">$500–$1.5K</div>
+        <div class="wi-desc">30-day advertising spend to build ranking, data, and early reviews</div>
       </div>
     </div>
+  </div>
 
-    <div class="print-bar">
-      <p>FBA Unchained &nbsp;·&nbsp; fbaunchained.com/cheatsheet</p>
-      <button class="btn-outline" onclick="window.print()">
-        <svg
-          width="13"
-          height="13"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <path
-            d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"
-          />
-          <rect x="6" y="14" width="12" height="8" />
-        </svg>
-        Print / Save PDF
-      </button>
-    </div>
+  <div class="cs-grid">
 
-    <div class="cheatsheet">
-      <!-- Key Numbers -->
-      <div class="card card-wide" style="margin-bottom: 20px">
-        <div class="card-tag">Key Numbers to Know Before You Start</div>
-        <h2>The Numbers That Drive Every Decision</h2>
-        <div class="wide-grid">
-          <div class="wide-item">
-            <div class="wi-label">Target Selling Price</div>
-            <div class="wi-value">$25–$65</div>
-            <div class="wi-desc">
-              Sweet spot for healthy margins after FBA fees and cost of goods
-            </div>
-          </div>
-          <div class="wide-item">
-            <div class="wi-label">Minimum Net Margin</div>
-            <div class="wi-value">30%+</div>
-            <div class="wi-desc">
-              After FBA fees, product cost, and shipping. Non-negotiable
-            </div>
-          </div>
-          <div class="wide-item">
-            <div class="wi-label">Monthly Sales (Niche)</div>
-            <div class="wi-value">3,000+</div>
-            <div class="wi-desc">
-              Combined units across top 10 listings confirms real demand
-            </div>
-          </div>
-          <div class="wide-item">
-            <div class="wi-label">Competitor Reviews</div>
-            <div class="wi-value">&lt;300</div>
-            <div class="wi-desc">
-              Most top sellers should have under 300 reviews to enter
-              competitively
-            </div>
-          </div>
-          <div class="wide-item">
-            <div class="wi-label">First Order Size</div>
-            <div class="wi-value">200–300</div>
-            <div class="wi-desc">
-              Units for your first order. Enough to test without over-committing
-              capital
-            </div>
-          </div>
-          <div class="wide-item">
-            <div class="wi-label">Launch Ad Budget</div>
-            <div class="wi-value">$500–$1.5K</div>
-            <div class="wi-desc">
-              30-day advertising spend to build ranking, data, and early reviews
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="cs-grid">
-        <div class="card">
-          <div class="card-num">01</div>
-          <div class="card-tag">Research</div>
-          <h2>Product Research Checklist</h2>
-          <ul class="card-items">
-            <li>Selling price between <strong>$25 and $65</strong></li>
-            <li>Product weighs <strong>under 3 lbs</strong></li>
-            <li>Not dominated by recognizable brands</li>
-            <li>Year-round demand confirmed on Google Trends</li>
-            <li>Top sellers have <strong>under 300 reviews</strong></li>
-            <li>Simple to manufacture, no electronics or moving parts</li>
-            <li>Clear differentiation angle found in competitor reviews</li>
-            <li>30%+ net margin confirmed in FBA Revenue Calculator</li>
-          </ul>
-          <div class="card-tip">
-            <strong>Tool:</strong> Helium 10 Black Box. Set min revenue $5K, max
-            300 reviews, price $20–$65.
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-num">02</div>
-          <div class="card-tag">Sourcing</div>
-          <h2>Supplier Checklist</h2>
-          <ul class="card-items">
-            <li>Contact <strong>8–10 suppliers</strong> minimum on Alibaba</li>
-            <li>Filter by Verified Supplier and Trade Assurance only</li>
-            <li>Request pricing at 100, 300, and 500 unit MOQs</li>
-            <li>Ask about custom logo and custom packaging options</li>
-            <li>
-              Request supplier handles <strong>FBA prep</strong> (labeling, poly
-              bagging)
-            </li>
-            <li>
-              Negotiate payment:
-              <strong>30% deposit, 70% before shipment</strong>
-            </li>
-            <li>Order samples from top 3 suppliers before any bulk order</li>
-            <li>Use Alibaba Trade Assurance for payment protection</li>
-          </ul>
-          <div class="card-tip">
-            <strong>First order:</strong> Start at 200–300 units. Tell them you
-            plan to scale once the product sells.
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-num">03</div>
-          <div class="card-tag">Listing</div>
-          <h2>Listing Optimization</h2>
-          <ul class="card-items">
-            <li>
-              Title: <strong>Brand + Primary Keyword + Feature + Size</strong>,
-              under 200 chars
-            </li>
-            <li>Primary keyword appears in the first 60 characters</li>
-            <li>5 bullets: each starts with a CAPITALIZED benefit</li>
-            <li>
-              Fill all <strong>7–9 image slots</strong> — never leave any empty
-            </li>
-            <li>Main image: white background, product fills 85% of frame</li>
-            <li>Include lifestyle photo, infographic, and size reference</li>
-            <li>Fill all 250 bytes of backend search terms (no repeats)</li>
-            <li>A+ Content live before launch (requires Brand Registry)</li>
-          </ul>
-          <div class="card-tip">
-            <strong>Target:</strong> Conversion rate above 10%. Under 8% means
-            your main image or bullets need work.
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-num">04</div>
-          <div class="card-tag">Advertising</div>
-          <h2>Launch PPC Setup</h2>
-          <ul class="card-items">
-            <li><strong>Auto campaign:</strong> $40/day, $1.25 default bid</li>
-            <li>
-              <strong>Manual Broad campaign:</strong> $30/day, top 15 keywords
-            </li>
-            <li>
-              <strong>Competitor Targeting:</strong> $20/day, target top 5 ASINs
-            </li>
-            <li>
-              Run all three for <strong>14 days before making changes</strong>
-            </li>
-            <li>Download Search Term Report after 14 days</li>
-            <li>Move converting terms to a Manual Exact campaign</li>
-            <li>Negative match: 10+ clicks, zero sales</li>
-            <li>Target ACoS: <strong>30–40%</strong> during launch phase</li>
-          </ul>
-          <div class="card-tip">
-            <strong>Mindset:</strong> Launch month you will not be profitable.
-            You are buying data and ranking. The ROI comes in month 2 and 3.
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-num">05</div>
-          <div class="card-tag">Reviews</div>
-          <h2>Getting Your First Reviews</h2>
-          <ul class="card-items">
-            <li>
-              Enroll in <strong>Amazon Vine</strong> via Brand Registry (up to
-              30 units)
-            </li>
-            <li>
-              Click Request a Review on every single order in Seller Central
-            </li>
-            <li>Automate requests using Helium 10 Follow-Up</li>
-            <li>Include insert card with QR code to your review page</li>
-            <li>Ask genuine contacts to purchase and review honestly</li>
-            <li>
-              Never offer incentives for reviews — immediate TOS violation
-            </li>
-            <li>
-              Respond to every negative review within 48 hours, professionally
-            </li>
-          </ul>
-          <div class="card-tip">
-            <strong>Target:</strong> 20 genuine reviews in your first 60 days.
-            That is where the conversion flywheel starts turning.
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-num">06</div>
-          <div class="card-tag">Brand</div>
-          <h2>Brand Setup Checklist</h2>
-          <ul class="card-items">
-            <li>1–2 word brand name with .com domain available</li>
-            <li>Check USPTO trademark database before committing to a name</li>
-            <li>Logo in PNG transparent, SVG, light and dark versions</li>
-            <li>2–3 brand colors with HEX and Pantone codes documented</li>
-            <li>
-              File trademark at USPTO — pending status is enough for Brand
-              Registry
-            </li>
-            <li>
-              Enroll in <strong>Amazon Brand Registry</strong> with pending
-              trademark number
-            </li>
-            <li>
-              Design insert card with QR code and genuine thank-you message
-            </li>
-          </ul>
-          <div class="card-tip">
-            <strong>Priority:</strong> File trademark on day one. Brand Registry
-            unlocks A+ Content, Sponsored Brand ads, and hijacker protection.
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-num">07</div>
-          <div class="card-tag">Tools</div>
-          <h2>Essential Tools</h2>
-          <ul class="card-items">
-            <li>
-              <strong>Helium 10</strong> — product research, keywords, PPC
-              optimization
-            </li>
-            <li>
-              <strong>Keepa</strong> — free price history and BSR tracking
-            </li>
-            <li>
-              <strong>Google Trends</strong> — free seasonality and demand check
-            </li>
-            <li><strong>Alibaba</strong> — supplier sourcing and outreach</li>
-            <li>
-              <strong>Canva</strong> — packaging design, inserts, social content
-            </li>
-            <li>
-              <strong>Flexport / Freightos</strong> — freight forwarding quotes
-            </li>
-            <li>
-              <strong>MailerLite</strong> — email list, free up to 1,000
-              subscribers
-            </li>
-            <li>
-              <strong>FBA Revenue Calculator</strong> — always check margins
-              before sourcing
-            </li>
-          </ul>
-          <div class="card-tip">
-            <strong>Start free:</strong> Helium 10, Keepa, Google Trends, and
-            Canva all have free tiers. Do not pay for tools before you have a
-            validated product.
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-num">08</div>
-          <div class="card-tag">Avoid These</div>
-          <h2>Common First-Timer Mistakes</h2>
-          <ul class="card-items">
-            <li>Choosing a product priced under $20 or over $70</li>
-            <li>Skipping the sample order to save $150</li>
-            <li>Launching before the listing is fully optimized</li>
-            <li>Running out of stock mid-launch — ranking tanks overnight</li>
-            <li>Ignoring negative reviews instead of responding to them</li>
-            <li>Paying 100% upfront to a first-time supplier</li>
-            <li>Rushing product research — spend at least 2 full weeks here</li>
-            <li>Not filing a trademark before or immediately after launch</li>
-          </ul>
-          <div class="card-tip">
-            <strong>The real mistake:</strong> Rushing. Every shortcut costs
-            significantly more to fix than the time it saved.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="cta-section">
-      <div class="section-label">Ready to go deeper?</div>
-      <h2>This is Just the <span>Starting Point</span></h2>
-      <p>
-        FBA Unchained covers every step in full detail — video lessons, live
-        weekly Zoom calls, and templates for everything on this page.
-      </p>
-      <a
-        href="https://buy.stripe.com/28E3cv2Fv6vfg66bMhe7m02"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn-lg"
-        >Enroll in FBA Unchained</a
-      >
-      <p class="cta-note">
-        🔒 7-day money-back guarantee &nbsp;·&nbsp; Cancel anytime
-      </p>
-    </div>
-
-    <footer>
-      <div class="footer-logo">
-        <span style="margin-right: 6px">⛓️‍💥</span>FBA Unchained
-      </div>
-      <div style="display: flex; gap: 20px; align-items: center">
-        <a
-          href="https://discord.gg/R3ffs6FRgv"
-          title="Discord"
-          target="_blank"
-          rel="noopener noreferrer"
-          style="
-            display: inline-flex;
-            align-items: center;
-            gap: 7px;
-            text-decoration: none;
-            color: var(--muted);
-            font-size: 0.78rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            transition: color 0.2s;
-          "
-          onmouseover="this.style.color = 'var(--gold)'"
-          onmouseout="this.style.color = 'var(--muted)'"
-        >
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.033.055a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"
-            />
-          </svg>
-          Discord
-        </a>
-        <a
-          href="#"
-          title="Telegram"
-          style="
-            display: inline-flex;
-            align-items: center;
-            gap: 7px;
-            text-decoration: none;
-            color: var(--muted);
-            font-size: 0.78rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            transition: color 0.2s;
-          "
-          onmouseover="this.style.color = 'var(--gold)'"
-          onmouseout="this.style.color = 'var(--muted)'"
-        >
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
-            />
-          </svg>
-          Telegram
-        </a>
-      </div>
-      <ul class="footer-links">
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms</a></li>
-        <li><a href="refund.html">Refund Policy</a></li>
-        <li>
-          <a
-            href="/cdn-cgi/l/email-protection#e28a8ba2848083978c818a838b8c8786cc818d8f"
-            >Contact</a
-          >
-        </li>
+    <div class="card">
+      <div class="card-num">01</div>
+      <div class="card-tag">Research</div>
+      <h2>Product Research Checklist</h2>
+      <ul class="card-items">
+        <li>Selling price between <strong>$25 and $65</strong></li>
+        <li>Product weighs <strong>under 3 lbs</strong></li>
+        <li>Not dominated by recognizable brands</li>
+        <li>Year-round demand confirmed on Google Trends</li>
+        <li>Top sellers have <strong>under 300 reviews</strong></li>
+        <li>Simple to manufacture, no electronics or moving parts</li>
+        <li>Clear differentiation angle found in competitor reviews</li>
+        <li>30%+ net margin confirmed in FBA Revenue Calculator</li>
       </ul>
-      <p>
-        <span id="copyright"></span> FBA Unchained, LLC. All rights reserved.
-      </p>
-      <script
-        data-cfasync="false"
-        src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-      ></script>
-      <script>
-        document.getElementById("copyright").textContent =
-          "© " + new Date().getFullYear();
-      </script>
-    </footer>
-  </body>
+      <div class="card-tip"><strong>Tool:</strong> Helium 10 Black Box. Set min revenue $5K, max 300 reviews, price $20–$65.</div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">02</div>
+      <div class="card-tag">Sourcing</div>
+      <h2>Supplier Checklist</h2>
+      <ul class="card-items">
+        <li>Contact <strong>8–10 suppliers</strong> minimum on Alibaba</li>
+        <li>Filter by Verified Supplier and Trade Assurance only</li>
+        <li>Request pricing at 100, 300, and 500 unit MOQs</li>
+        <li>Ask about custom logo and custom packaging options</li>
+        <li>Request supplier handles <strong>FBA prep</strong> (labeling, poly bagging)</li>
+        <li>Negotiate payment: <strong>30% deposit, 70% before shipment</strong></li>
+        <li>Order samples from top 3 suppliers before any bulk order</li>
+        <li>Use Alibaba Trade Assurance for payment protection</li>
+      </ul>
+      <div class="card-tip"><strong>First order:</strong> Start at 200–300 units. Tell them you plan to scale once the product sells.</div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">03</div>
+      <div class="card-tag">Listing</div>
+      <h2>Listing Optimization</h2>
+      <ul class="card-items">
+        <li>Title: <strong>Brand + Primary Keyword + Feature + Size</strong>, under 200 chars</li>
+        <li>Primary keyword appears in the first 60 characters</li>
+        <li>5 bullets: each starts with a CAPITALIZED benefit</li>
+        <li>Fill all <strong>7–9 image slots</strong> — never leave any empty</li>
+        <li>Main image: white background, product fills 85% of frame</li>
+        <li>Include lifestyle photo, infographic, and size reference</li>
+        <li>Fill all 250 bytes of backend search terms (no repeats)</li>
+        <li>A+ Content live before launch (requires Brand Registry)</li>
+      </ul>
+      <div class="card-tip"><strong>Target:</strong> Conversion rate above 10%. Under 8% means your main image or bullets need work.</div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">04</div>
+      <div class="card-tag">Advertising</div>
+      <h2>Launch PPC Setup</h2>
+      <ul class="card-items">
+        <li><strong>Auto campaign:</strong> $40/day, $1.25 default bid</li>
+        <li><strong>Manual Broad campaign:</strong> $30/day, top 15 keywords</li>
+        <li><strong>Competitor Targeting:</strong> $20/day, target top 5 ASINs</li>
+        <li>Run all three for <strong>14 days before making changes</strong></li>
+        <li>Download Search Term Report after 14 days</li>
+        <li>Move converting terms to a Manual Exact campaign</li>
+        <li>Negative match: 10+ clicks, zero sales</li>
+        <li>Target ACoS: <strong>30–40%</strong> during launch phase</li>
+      </ul>
+      <div class="card-tip"><strong>Mindset:</strong> Launch month you will not be profitable. You are buying data and ranking. The ROI comes in month 2 and 3.</div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">05</div>
+      <div class="card-tag">Reviews</div>
+      <h2>Getting Your First Reviews</h2>
+      <ul class="card-items">
+        <li>Enroll in <strong>Amazon Vine</strong> via Brand Registry (up to 30 units)</li>
+        <li>Click Request a Review on every single order in Seller Central</li>
+        <li>Automate requests using Helium 10 Follow-Up</li>
+        <li>Include insert card with QR code to your review page</li>
+        <li>Ask genuine contacts to purchase and review honestly</li>
+        <li>Never offer incentives for reviews — immediate TOS violation</li>
+        <li>Respond to every negative review within 48 hours, professionally</li>
+      </ul>
+      <div class="card-tip"><strong>Target:</strong> 20 genuine reviews in your first 60 days. That is where the conversion flywheel starts turning.</div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">06</div>
+      <div class="card-tag">Brand</div>
+      <h2>Brand Setup Checklist</h2>
+      <ul class="card-items">
+        <li>1–2 word brand name with .com domain available</li>
+        <li>Check USPTO trademark database before committing to a name</li>
+        <li>Logo in PNG transparent, SVG, light and dark versions</li>
+        <li>2–3 brand colors with HEX and Pantone codes documented</li>
+        <li>File trademark at USPTO — pending status is enough for Brand Registry</li>
+        <li>Enroll in <strong>Amazon Brand Registry</strong> with pending trademark number</li>
+        <li>Design insert card with QR code and genuine thank-you message</li>
+      </ul>
+      <div class="card-tip"><strong>Priority:</strong> File trademark on day one. Brand Registry unlocks A+ Content, Sponsored Brand ads, and hijacker protection.</div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">07</div>
+      <div class="card-tag">Tools</div>
+      <h2>Essential Tools</h2>
+      <ul class="card-items">
+        <li><strong>Helium 10</strong> — product research, keywords, PPC optimization</li>
+        <li><strong>Keepa</strong> — free price history and BSR tracking</li>
+        <li><strong>Google Trends</strong> — free seasonality and demand check</li>
+        <li><strong>Alibaba</strong> — supplier sourcing and outreach</li>
+        <li><strong>Canva</strong> — packaging design, inserts, social content</li>
+        <li><strong>Flexport / Freightos</strong> — freight forwarding quotes</li>
+        <li><strong>MailerLite</strong> — email list, free up to 1,000 subscribers</li>
+        <li><strong>FBA Revenue Calculator</strong> — always check margins before sourcing</li>
+      </ul>
+      <div class="card-tip"><strong>Start free:</strong> Helium 10, Keepa, Google Trends, and Canva all have free tiers. Do not pay for tools before you have a validated product.</div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">08</div>
+      <div class="card-tag">Avoid These</div>
+      <h2>Common First-Timer Mistakes</h2>
+      <ul class="card-items">
+        <li>Choosing a product priced under $20 or over $70</li>
+        <li>Skipping the sample order to save $150</li>
+        <li>Launching before the listing is fully optimized</li>
+        <li>Running out of stock mid-launch — ranking tanks overnight</li>
+        <li>Ignoring negative reviews instead of responding to them</li>
+        <li>Paying 100% upfront to a first-time supplier</li>
+        <li>Rushing product research — spend at least 2 full weeks here</li>
+        <li>Not filing a trademark before or immediately after launch</li>
+      </ul>
+      <div class="card-tip"><strong>The real mistake:</strong> Rushing. Every shortcut costs significantly more to fix than the time it saved.</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="cta-section">
+  <div class="section-label">Ready to go deeper?</div>
+  <h2>This is Just the <span>Starting Point</span></h2>
+  <p>FBA Unchained covers every step in full detail — video lessons, live weekly Zoom calls, and templates for everything on this page.</p>
+  <a href="https://buy.stripe.com/28E3cv2Fv6vfg66bMhe7m02" target="_blank" rel="noopener noreferrer" class="btn-lg">Enroll in FBA Unchained</a>
+  <p class="cta-note">🔒 7-day money-back guarantee &nbsp;·&nbsp; Cancel anytime</p>
+</div>
+
+<footer>
+  <div class="footer-logo"><span style="margin-right:6px;">⛓️‍💥</span>FBA Unchained</div>
+  <div style="display:flex; gap:20px; align-items:center;">
+    <a href="https://discord.gg/R3ffs6FRgv" title="Discord" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:7px; text-decoration:none; color:var(--muted); font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--muted)'">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.033.055a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+      Discord
+    </a>
+    <a href="#" title="Telegram" style="display:inline-flex; align-items:center; gap:7px; text-decoration:none; color:var(--muted); font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--muted)'">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+      Telegram
+    </a>
+  </div>
+  <ul class="footer-links">
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms</a></li>
+    <li><a href="refund.html">Refund Policy</a></li>
+    <li><a href="/cdn-cgi/l/email-protection#e28a8ba2848083978c818a838b8c8786cc818d8f">Contact</a></li>
+  </ul>
+  <p><span id="copyright"></span> FBA Unchained, LLC. All rights reserved.</p>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script>document.getElementById('copyright').textContent = '© ' + new Date().getFullYear();</script>
+</footer>
+
+</body>
 </html>
