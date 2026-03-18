@@ -31,7 +31,10 @@
   .topbar-signout { background: none; border: 1px solid rgba(245,166,35,0.3); color: var(--muted); padding: 6px 14px; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; font-family: 'DM Mono', monospace; transition: all 0.2s; }
   .topbar-signout:hover { border-color: var(--gold); color: var(--gold); }
   .menu-toggle { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; padding: 4px; }
-  .menu-toggle span { display: block; width: 22px; height: 2px; background: var(--text); transition: all 0.3s; }
+  .menu-toggle span { display: block; width: 22px; height: 2px; background: var(--text); transition: transform 0.3s, opacity 0.3s; }
+  .menu-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .menu-toggle.open span:nth-child(2) { opacity: 0; }
+  .menu-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
   /* ── LAYOUT ── */
   .layout { display: flex; margin-top: 60px; height: calc(100vh - 60px); }
@@ -327,9 +330,11 @@
   window.toggleSidebar = function() {
     const sidebar = document.getElementById('sidebar');
     const overlay = document.getElementById('sidebar-overlay');
+    const btn = document.getElementById('menu-toggle');
     const isOpening = !sidebar.classList.contains('open');
     sidebar.classList.toggle('open');
     overlay.classList.toggle('show');
+    btn.classList.toggle('open');
     if (isOpening) {
       // iOS fix: position:fixed stops background scroll on Safari
       _scrollY = window.scrollY;
@@ -355,6 +360,7 @@
   window.closeSidebar = function() {
     document.getElementById('sidebar').classList.remove('open');
     document.getElementById('sidebar-overlay').classList.remove('show');
+    document.getElementById('menu-toggle').classList.remove('open');
     _closeSidebarScroll();
   };
 
