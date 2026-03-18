@@ -113,11 +113,11 @@
     .sidebar { position: fixed; left: 0; top: 60px; height: calc(100vh - 60px); z-index: 50; transition: transform 0.3s ease; transform: translateX(-100%); overflow-y: scroll; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
     .sidebar.open { transform: translateX(0); }
     .sidebar-overlay.show { display: block; }
-    .main { padding: 32px 20px 120px; }
+    .main { padding: 32px 20px 48px; }
     .menu-toggle { display: flex; }
     .topbar-user { display: none; }
     .module-nav { flex-direction: column; }
-    .nav-btn { justify-content: center; }
+    .nav-btn { justify-content: center; cursor: pointer; }
     .resources-grid { grid-template-columns: 1fr; }
   }
 </style>
@@ -130,15 +130,13 @@
 <div id="app">
   <!-- TOP BAR -->
   <div class="topbar">
-    <div style="display:flex; align-items:center; gap:16px;">
-      <button class="menu-toggle" id="menu-toggle" onclick="toggleSidebar()">
-        <span></span><span></span><span></span>
-      </button>
-      <a href="../index.html" class="topbar-logo"><span class="nav-emoji" style="margin-right:6px; display:inline-block;">⛓️‍💥</span>FBA Unchained</a>
-    </div>
+    <a href="../index.html" class="topbar-logo"><span style="margin-right:6px; display:inline-block;">⛓️‍💥</span>FBA Unchained</a>
     <div class="topbar-right">
       <span class="topbar-user" id="user-email"></span>
       <button class="topbar-signout" onclick="handleSignOut()">Sign Out</button>
+      <button class="menu-toggle" id="menu-toggle" onclick="toggleSidebar()">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 
