@@ -71,10 +71,26 @@
         margin: 0;
         padding: 0;
       }
-      body { cursor: default; }
-  * { cursor: inherit; }
-  a, button, [onclick], label, select { cursor: pointer !important; user-select: none; -webkit-user-select: none; }
-  a *, button *, [onclick] * { cursor: pointer !important; }
+      body {
+        cursor: default;
+      }
+      * {
+        cursor: inherit;
+      }
+      a,
+      button,
+      [onclick],
+      label,
+      select {
+        cursor: pointer !important;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      a *,
+      button *,
+      [onclick] * {
+        cursor: pointer !important;
+      }
       html {
         scroll-behavior: smooth;
         scroll-padding-top: 72px;
@@ -866,7 +882,9 @@
       }
 
       @media (max-width: 900px) {
-        .nav-emoji { display: none; }
+        .nav-emoji {
+          display: none;
+        }
         nav {
           padding: 16px 24px;
         }
@@ -1073,7 +1091,10 @@
   </head>
   <body>
     <nav>
-      <div class="nav-logo"><span style="font-size:1.3rem;margin-right:6px;">⛓️‍💥</span>FBA Unchained</div>
+      <a class="nav-logo" href="#hero" style="text-decoration: none"
+        ><span style="font-size: 1.3rem; margin-right: 6px">⛓️‍💥</span>FBA
+        Unchained</a
+      >
       <button
         class="hamburger"
         id="hamburger"
@@ -2363,25 +2384,28 @@
           .addEventListener("submit", function (e) {
             e.preventDefault();
             const form = this;
-            const email = form.querySelector('input[name="fields[email]"]').value.trim();
+            const email = form
+              .querySelector('input[name="fields[email]"]')
+              .value.trim();
             if (!email) return;
 
             const btn = form.querySelector('button[type="submit"]');
             btn.disabled = true;
-            btn.textContent = 'Sending...';
+            btn.textContent = "Sending...";
 
             // Use XMLHttpRequest — more reliable than fetch for MailerLite JSONP
             const xhr = new XMLHttpRequest();
-            xhr.open('POST', form.action, true);
-            xhr.onreadystatechange = function() {
+            xhr.open("POST", form.action, true);
+            xhr.onreadystatechange = function () {
               if (xhr.readyState === 4) {
-                form.style.display = 'none';
-                document.getElementById('ml-success-msg').style.display = 'block';
+                form.style.display = "none";
+                document.getElementById("ml-success-msg").style.display =
+                  "block";
               }
             };
-            xhr.onerror = function() {
-              form.style.display = 'none';
-              document.getElementById('ml-success-msg').style.display = 'block';
+            xhr.onerror = function () {
+              form.style.display = "none";
+              document.getElementById("ml-success-msg").style.display = "block";
             };
             xhr.send(new FormData(form));
           });
@@ -2389,11 +2413,11 @@
           link.addEventListener("click", () => {
             document.getElementById("hamburger").classList.remove("open");
             document.getElementById("nav-links").classList.remove("open");
-            document.body.style.position = '';
-            document.body.style.top = '';
-            document.body.style.left = '';
-            document.body.style.right = '';
-            document.body.style.overflow = '';
+            document.body.style.position = "";
+            document.body.style.top = "";
+            document.body.style.left = "";
+            document.body.style.right = "";
+            document.body.style.overflow = "";
             window.scrollTo(0, _navScrollY);
           });
         });
@@ -2418,24 +2442,31 @@
         navLinks.classList.toggle("open");
         if (isOpening) {
           _navScrollY = window.scrollY;
-          document.body.style.position = 'fixed';
-          document.body.style.top = '-' + _navScrollY + 'px';
-          document.body.style.left = '0';
-          document.body.style.right = '0';
-          document.body.style.overflow = 'hidden';
+          document.body.style.position = "fixed";
+          document.body.style.top = "-" + _navScrollY + "px";
+          document.body.style.left = "0";
+          document.body.style.right = "0";
+          document.body.style.overflow = "hidden";
         } else {
-          document.body.style.position = '';
-          document.body.style.top = '';
-          document.body.style.left = '';
-          document.body.style.right = '';
-          document.body.style.overflow = '';
+          document.body.style.position = "";
+          document.body.style.top = "";
+          document.body.style.left = "";
+          document.body.style.right = "";
+          document.body.style.overflow = "";
           window.scrollTo(0, _navScrollY);
         }
       }
     </script>
 
     <!-- MailerLite tracking -->
-    <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v95037e5bac78f29ed026832ca21a7c7b" type="text/javascript"></script>
-    <script>fetch("https://assets.mailerlite.com/jsonp/2191058/forms/181948904518976582/takel")</script>
+    <script
+      src="https://groot.mailerlite.com/js/w/webforms.min.js?v95037e5bac78f29ed026832ca21a7c7b"
+      type="text/javascript"
+    ></script>
+    <script>
+      fetch(
+        "https://assets.mailerlite.com/jsonp/2191058/forms/181948904518976582/takel",
+      );
+    </script>
   </body>
 </html>
