@@ -71,6 +71,10 @@
         margin: 0;
         padding: 0;
       }
+      body { cursor: default; }
+  * { cursor: inherit; }
+  a, button, [onclick], label, select { cursor: pointer !important; user-select: none; -webkit-user-select: none; }
+  a *, button *, [onclick] * { cursor: pointer !important; }
       html {
         scroll-behavior: smooth;
         scroll-padding-top: 72px;
