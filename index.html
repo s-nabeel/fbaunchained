@@ -836,6 +836,11 @@
         padding: 4px;
         background: none;
         border: none;
+        overflow: hidden;
+        width: 32px;
+        height: 32px;
+        justify-content: center;
+        align-items: center;
       }
       .hamburger span {
         display: block;
@@ -857,6 +862,7 @@
       }
 
       @media (max-width: 900px) {
+        .nav-emoji { display: none; }
         nav {
           padding: 16px 24px;
         }
@@ -1063,7 +1069,7 @@
   </head>
   <body>
     <nav>
-      <div class="nav-logo"><span style="font-size:1.3rem;margin-right:6px;">⛓️‍💥</span>FBA Unchained</div>
+      <div class="nav-logo"><span class="nav-emoji" style="font-size:1.3rem;margin-right:6px;">⛓️‍💥</span>FBA Unchained</div>
       <button
         class="hamburger"
         id="hamburger"

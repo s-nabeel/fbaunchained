@@ -30,7 +30,7 @@
   .topbar-user { font-size: 0.78rem; color: var(--muted); font-family: 'DM Mono', monospace; letter-spacing: 0.06em; }
   .topbar-signout { background: none; border: 1px solid rgba(245,166,35,0.3); color: var(--muted); padding: 6px 14px; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; font-family: 'DM Mono', monospace; transition: all 0.2s; }
   .topbar-signout:hover { border-color: var(--gold); color: var(--gold); }
-  .menu-toggle { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; padding: 4px; }
+  .menu-toggle { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; padding: 4px; overflow: hidden; width: 32px; height: 32px; justify-content: center; align-items: center; }
   .menu-toggle span { display: block; width: 22px; height: 2px; background: var(--text); transition: transform 0.3s, opacity 0.3s; }
   .menu-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .menu-toggle.open span:nth-child(2) { opacity: 0; }
@@ -109,6 +109,7 @@
   .callout p { font-size: 0.88rem; color: var(--muted); line-height: 1.75; }
 
   @media (max-width: 768px) {
+    .nav-emoji { display: none; }
     .sidebar { position: fixed; left: 0; top: 60px; height: calc(100vh - 60px); z-index: 50; transition: transform 0.3s ease; transform: translateX(-100%); overflow-y: scroll; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
     .sidebar.open { transform: translateX(0); }
     .sidebar-overlay.show { display: block; }
@@ -133,7 +134,7 @@
       <button class="menu-toggle" id="menu-toggle" onclick="toggleSidebar()">
         <span></span><span></span><span></span>
       </button>
-      <a href="../index.html" class="topbar-logo"><span style="margin-right:6px; display:inline-block;">⛓️‍💥</span>FBA Unchained</a>
+      <a href="../index.html" class="topbar-logo"><span class="nav-emoji" style="margin-right:6px; display:inline-block;">⛓️‍💥</span>FBA Unchained</a>
     </div>
     <div class="topbar-right">
       <span class="topbar-user" id="user-email"></span>
