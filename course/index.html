@@ -117,6 +117,7 @@
     .resources-grid { grid-template-columns: 1fr; }
   }
 </style>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 </head>
 <body>
 
@@ -312,7 +313,7 @@
         ${num > 1 ? `<button class="nav-btn" onclick="showModule(${num-1})">← Module ${num-1}</button>` : `<span></span>`}
         ${num < 11
           ? `<button class="nav-btn next" onclick="showModule(${num+1})">Module ${num+1} →</button>`
-          : `<button class="nav-btn next" style="background:var(--dark3); border-color:rgba(245,166,35,0.3); color:var(--gold);">🎉 Course Complete!</button>`}
+          : `<button class="nav-btn next" onclick="launchConfetti()" style="background:var(--dark3); border-color:rgba(245,166,35,0.3); color:var(--gold);">🎉 Course Complete!</button>`}
       </div>
     `;
 
@@ -355,6 +356,30 @@
     document.getElementById('sidebar').classList.remove('open');
     document.getElementById('sidebar-overlay').classList.remove('show');
     _closeSidebarScroll();
+  };
+
+  window.launchConfetti = function() {
+    const colors = ['#F5A623', '#FFD280', '#FAF8F4', '#ffffff'];
+    const mobile = window.innerWidth < 768;
+
+    if (mobile) {
+      // On mobile: single big burst from bottom center
+      confetti({ particleCount: 120, spread: 80, origin: { x: 0.5, y: 1 }, colors: colors, startVelocity: 60 });
+      setTimeout(() => {
+        confetti({ particleCount: 80, spread: 100, origin: { x: 0.5, y: 0.9 }, colors: colors });
+      }, 300);
+    } else {
+      // On desktop: dual bursts from bottom corners
+      confetti({ particleCount: 80, spread: 60, origin: { x: 0.3, y: 1 }, colors: colors, startVelocity: 55 });
+      confetti({ particleCount: 80, spread: 60, origin: { x: 0.7, y: 1 }, colors: colors, startVelocity: 55 });
+      setTimeout(() => {
+        confetti({ particleCount: 60, spread: 80, origin: { x: 0.5, y: 0.8 }, colors: colors });
+      }, 200);
+      setTimeout(() => {
+        confetti({ particleCount: 40, spread: 100, origin: { x: 0.2, y: 0.9 }, colors: colors });
+        confetti({ particleCount: 40, spread: 100, origin: { x: 0.8, y: 0.9 }, colors: colors });
+      }, 450);
+    }
   };
 </script>
 </body>
