@@ -320,20 +320,41 @@
     if (window.innerWidth <= 768) closeSidebar();
   };
 
+  // Store scroll position for iOS body lock
+  let _scrollY = 0;
+
   window.toggleSidebar = function() {
     const sidebar = document.getElementById('sidebar');
     const overlay = document.getElementById('sidebar-overlay');
     const isOpening = !sidebar.classList.contains('open');
     sidebar.classList.toggle('open');
     overlay.classList.toggle('show');
-    // Lock body scroll when sidebar is open so touch events stay in sidebar
-    document.body.style.overflow = isOpening ? 'hidden' : '';
+    if (isOpening) {
+      // iOS fix: position:fixed stops background scroll on Safari
+      _scrollY = window.scrollY;
+      document.body.style.position = 'fixed';
+      document.body.style.top = '-' + _scrollY + 'px';
+      document.body.style.left = '0';
+      document.body.style.right = '0';
+      document.body.style.overflow = 'hidden';
+    } else {
+      _closeSidebarScroll();
+    }
   };
+
+  function _closeSidebarScroll() {
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.left = '';
+    document.body.style.right = '';
+    document.body.style.overflow = '';
+    window.scrollTo(0, _scrollY);
+  }
 
   window.closeSidebar = function() {
     document.getElementById('sidebar').classList.remove('open');
     document.getElementById('sidebar-overlay').classList.remove('show');
-    document.body.style.overflow = '';
+    _closeSidebarScroll();
   };
 </script>
 </body>
