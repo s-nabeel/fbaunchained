@@ -364,7 +364,7 @@
       }
       .benefits-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(6, 1fr);
         gap: 1px;
         background: rgba(245, 166, 35, 0.1);
         border: 1px solid rgba(245, 166, 35, 0.1);
@@ -439,15 +439,14 @@
         margin-bottom: 0;
       }
       .modules-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr));
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 1px;
         background: var(--dark2);
       }
-      .module-card:last-child {
-        grid-column: 3;
-      }
       .module-card {
+        flex: 0 0 calc(25% - 1px);
         background: var(--dark2);
         padding: 36px 32px;
         display: flex;
@@ -566,19 +565,52 @@
         text-align: center;
       }
 
+      /* ── RESULTS STATS GRID ── */
+      .results-stats-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        background: rgba(245, 166, 35, 0.1);
+        border: 1px solid rgba(245, 166, 35, 0.1);
+        margin-bottom: 64px;
+      }
+      .results-stat {
+        background: var(--dark3);
+        padding: 40px 20px;
+        text-align: center;
+      }
+      .results-stat-number {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(1.8rem, 3vw, 3.2rem);
+        color: var(--gold);
+        line-height: 1;
+        white-space: nowrap;
+      }
+      .results-stat-label {
+        font-size: 0.78rem;
+        color: var(--muted);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-top: 6px;
+      }
+
       #testimonials {
         background: var(--dark2);
       }
       .testimonials-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(5, 1fr);
         gap: 24px;
+        align-items: stretch;
       }
       .testimonial-card {
         background: var(--dark3);
         border: 1px solid rgba(245, 166, 35, 0.1);
         padding: 36px 32px;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
       }
       .testimonial-card::before {
         content: '"';
@@ -602,15 +634,19 @@
         line-height: 1.75;
         margin-bottom: 24px;
         font-style: italic;
+        flex: 1;
       }
       .testimonial-author {
         display: flex;
         align-items: center;
         gap: 14px;
+        margin-top: auto;
       }
       .author-avatar {
         width: 40px;
         height: 40px;
+        min-width: 40px;
+        min-height: 40px;
         border-radius: 50%;
         background: var(--dark4);
         border: 1px solid rgba(245, 166, 35, 0.2);
@@ -618,6 +654,8 @@
         align-items: center;
         justify-content: center;
         font-size: 1rem;
+        overflow: hidden;
+        flex-shrink: 0;
       }
       .author-name {
         font-weight: 500;
@@ -947,13 +985,13 @@
           gap: 28px;
         }
         .benefits-grid {
-          grid-template-columns: 1fr;
+          grid-template-columns: repeat(3, 1fr);
         }
         .modules-list {
-          grid-template-columns: 1fr;
+          justify-content: flex-start;
         }
-        .module-card:last-child {
-          grid-column: 1;
+        .module-card {
+          flex: 0 0 calc(50% - 1px);
         }
         .modules-header {
           flex-direction: column;
@@ -970,8 +1008,11 @@
           max-width: 100% !important;
           width: 100% !important;
         }
+        .results-stats-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
         .testimonials-grid {
-          grid-template-columns: 1fr;
+          grid-template-columns: repeat(2, 1fr);
         }
         .faq-question {
           font-size: 0.95rem;
@@ -1039,6 +1080,24 @@
         }
       }
 
+      @media (max-width: 768px) {
+        .benefits-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .modules-list {
+          flex-direction: column;
+        }
+        .module-card {
+          flex: 0 0 100%;
+        }
+        .testimonials-grid {
+          grid-template-columns: 1fr;
+        }
+        .results-stats-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
       @media (max-width: 500px) {
         h1 {
           font-size: clamp(2.8rem, 12vw, 5rem);
@@ -1075,6 +1134,12 @@
         .module-num {
           font-size: 1.8rem;
           min-width: unset;
+        }
+        .benefits-grid {
+          grid-template-columns: 1fr;
+        }
+        .results-stats-grid {
+          grid-template-columns: 1fr;
         }
         .pricing-card {
           padding: 32px 20px;
@@ -1764,142 +1829,22 @@
         Real screenshots. Real dashboards. Real students who followed the FBA
         Unchained system and built profitable private label brands.
       </p>
-      <div
-        style="
-          display: grid;
-          grid-template-columns: repeat(
-            auto-fit,
-            minmax(min(180px, 100%), 1fr)
-          );
-          gap: 1px;
-          background: rgba(245, 166, 35, 0.1);
-          border: 1px solid rgba(245, 166, 35, 0.1);
-          margin-bottom: 64px;
-        "
-      >
-        <div
-          style="
-            background: var(--dark3);
-            padding: 40px 32px;
-            text-align: center;
-          "
-        >
-          <div
-            style="
-              font-family: &quot;Bebas Neue&quot;, sans-serif;
-              font-size: 3.2rem;
-              color: var(--gold);
-              line-height: 1;
-            "
-          >
-            $<span class="results-count" data-target="400" data-suffix="K+"
-              >0</span
-            >
-          </div>
-          <div
-            style="
-              font-size: 0.78rem;
-              color: var(--muted);
-              letter-spacing: 0.1em;
-              text-transform: uppercase;
-              margin-top: 6px;
-            "
-          >
-            Total Student Revenue
-          </div>
+      <div class="results-stats-grid">
+        <div class="results-stat">
+          <div class="results-stat-number">$<span class="results-count" data-target="400" data-suffix="K+">0</span></div>
+          <div class="results-stat-label">Total Student Revenue</div>
         </div>
-        <div
-          style="
-            background: var(--dark3);
-            padding: 40px 32px;
-            text-align: center;
-          "
-        >
-          <div
-            style="
-              font-family: &quot;Bebas Neue&quot;, sans-serif;
-              font-size: 3.2rem;
-              color: var(--gold);
-              line-height: 1;
-            "
-          >
-            $<span class="results-count" data-target="33" data-suffix="K+"
-              >0</span
-            >
-          </div>
-          <div
-            style="
-              font-size: 0.78rem;
-              color: var(--muted);
-              letter-spacing: 0.1em;
-              text-transform: uppercase;
-              margin-top: 6px;
-            "
-          >
-            Best Single Week
-          </div>
+        <div class="results-stat">
+          <div class="results-stat-number">$<span class="results-count" data-target="33" data-suffix="K+">0</span></div>
+          <div class="results-stat-label">Best Single Week</div>
         </div>
-        <div
-          style="
-            background: var(--dark3);
-            padding: 40px 32px;
-            text-align: center;
-          "
-        >
-          <div
-            style="
-              font-family: &quot;Bebas Neue&quot;, sans-serif;
-              font-size: 3.2rem;
-              color: var(--gold);
-              line-height: 1;
-            "
-          >
-            <span class="results-count" data-target="150" data-suffix="+"
-              >0</span
-            >
-          </div>
-          <div
-            style="
-              font-size: 0.78rem;
-              color: var(--muted);
-              letter-spacing: 0.1em;
-              text-transform: uppercase;
-              margin-top: 6px;
-            "
-          >
-            Students Enrolled
-          </div>
+        <div class="results-stat">
+          <div class="results-stat-number"><span class="results-count" data-target="150" data-suffix="+">0</span></div>
+          <div class="results-stat-label">Students Enrolled</div>
         </div>
-        <div
-          style="
-            background: var(--dark3);
-            padding: 40px 32px;
-            text-align: center;
-          "
-        >
-          <div
-            style="
-              font-family: &quot;Bebas Neue&quot;, sans-serif;
-              font-size: 3.2rem;
-              color: var(--gold);
-              line-height: 1;
-            "
-          >
-            <span class="results-count" data-target="545" data-suffix="%"
-              >0</span
-            >
-          </div>
-          <div
-            style="
-              font-size: 0.78rem;
-              color: var(--muted);
-              letter-spacing: 0.1em;
-              text-transform: uppercase;
-              margin-top: 6px;
-            "
-          >
-            Best Month-over-Month Growth
-          </div>
+        <div class="results-stat">
+          <div class="results-stat-number"><span class="results-count" data-target="545" data-suffix="%">0</span></div>
+          <div class="results-stat-label">Best Month-over-Month Growth</div>
         </div>
       </div>
       <div
@@ -2064,7 +2009,7 @@
             research module alone was worth 10x the price of the course."
           </p>
           <div class="testimonial-author">
-            <div class="author-avatar">👤</div>
+            <div class="author-avatar"><svg width="20" height="20" viewBox="0 0 24 24" fill="var(--muted)"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg></div>
             <div>
               <div class="author-name">Hamza S.</div>
               <div class="author-detail">$5,000 first month</div>
@@ -2079,7 +2024,7 @@
             impossible to get lost."
           </p>
           <div class="testimonial-author">
-            <div class="author-avatar">👤</div>
+            <div class="author-avatar"><svg width="20" height="20" viewBox="0 0 24 24" fill="var(--muted)"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg></div>
             <div>
               <div class="author-name">Adam O.</div>
               <div class="author-detail">First product live in 90 days</div>
@@ -2093,7 +2038,7 @@
             first order. I've already recommended this course to three friends."
           </p>
           <div class="testimonial-author">
-            <div class="author-avatar">👤</div>
+            <div class="author-avatar"><svg width="20" height="20" viewBox="0 0 24 24" fill="var(--muted)"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg></div>
             <div>
               <div class="author-name">Cameron Q.</div>
               <div class="author-detail">Saved $400 on first order</div>
@@ -2108,7 +2053,7 @@
             everything feel manageable."
           </p>
           <div class="testimonial-author">
-            <div class="author-avatar">👤</div>
+            <div class="author-avatar"><svg width="20" height="20" viewBox="0 0 24 24" fill="var(--muted)"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg></div>
             <div>
               <div class="author-name">Brandon R.</div>
               <div class="author-detail">First product live in 30 days</div>
@@ -2123,7 +2068,7 @@
             Amazon is invaluable."
           </p>
           <div class="testimonial-author">
-            <div class="author-avatar">👤</div>
+            <div class="author-avatar"><svg width="20" height="20" viewBox="0 0 24 24" fill="var(--muted)"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg></div>
             <div>
               <div class="author-name">Michael Q.</div>
               <div class="author-detail">Active FBA seller</div>
